@@ -3504,6 +3504,234 @@
     ]
    ],
    "bytes": 30912
+  },
+  {
+   "id": "pet_snail",
+   "category": "pets",
+   "file": "models/props/pets/pet_snail.glb",
+   "notes": "Snail (nodes: body, shell, eyestalk_L/R). Common tier",
+   "bounds": [
+    [
+     -0.0675884559750557,
+     0.0,
+     -0.15000000596046448
+    ],
+    [
+     0.0675884559750557,
+     0.24832886219024658,
+     0.21850000321865082
+    ]
+   ],
+   "bytes": 53160
+  },
+  {
+   "id": "pet_dragon",
+   "category": "pets",
+   "file": "models/props/pets/pet_dragon.glb",
+   "notes": "Baby dragon (nodes: wing_L/R, tail, head). Legendary tier",
+   "bounds": [
+    [
+     -0.6048510503768921,
+     0.0,
+     -1.0494974732398987
+    ],
+    [
+     0.6048510503768921,
+     0.9925046300888062,
+     0.6199999821186066
+    ]
+   ],
+   "bytes": 49040
+  },
+  {
+   "id": "pet_wolf",
+   "category": "pets",
+   "file": "models/props/pets/pet_wolf.glb",
+   "notes": "Wolf (nodes: head, tail, leg_FL/FR/BL/BR). Epic tier",
+   "bounds": [
+    [
+     -0.1599999964237213,
+     -0.005000020265579219,
+     -0.7383012533187866
+    ],
+    [
+     0.1599999964237213,
+     0.9600000095367431,
+     0.6949999976158142
+    ]
+   ],
+   "bytes": 45576
+  },
+  {
+   "id": "pet_owl",
+   "category": "pets",
+   "file": "models/props/pets/pet_owl.glb",
+   "notes": "Owl (nodes: wing_L/R, head). Rare tier",
+   "bounds": [
+    [
+     -0.15999999955296518,
+     0.0,
+     -0.10999999940395355
+    ],
+    [
+     0.15999999955296518,
+     0.5838074147701263,
+     0.1599999964237213
+    ]
+   ],
+   "bytes": 38908
+  },
+  {
+   "id": "pet_bunny",
+   "category": "pets",
+   "file": "models/props/pets/pet_bunny.glb",
+   "notes": "Bunny (Common/Rare filler pet)",
+   "bounds": [
+    [
+     -0.10000000149011612,
+     0.009999997913837433,
+     -0.18000000715255737
+    ],
+    [
+     0.10000000149011612,
+     0.49000002145767213,
+     0.21070000052452087
+    ]
+   ],
+   "bytes": 29848
+  },
+  {
+   "id": "pet_cat",
+   "category": "pets",
+   "file": "models/props/pets/pet_cat.glb",
+   "notes": "Cat (Rare filler pet)",
+   "bounds": [
+    [
+     -0.10000000149011612,
+     0.0,
+     -0.2781413742899895
+    ],
+    [
+     0.10000000149011612,
+     0.5500652587413788,
+     0.3052999943494797
+    ]
+   ],
+   "bytes": 28828
+  },
+  {
+   "id": "egg_common",
+   "category": "pets",
+   "file": "models/props/pets/egg_common.glb",
+   "notes": "Hatching egg, common (grey) - nodes top/bottom",
+   "bounds": [
+    [
+     -0.19696155190467834,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.19696155190467834,
+     0.5200000214576721,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 22636
+  },
+  {
+   "id": "egg_rare",
+   "category": "pets",
+   "file": "models/props/pets/egg_rare.glb",
+   "notes": "Hatching egg, rare (blue)",
+   "bounds": [
+    [
+     -0.19696155190467834,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.19696155190467834,
+     0.5200000214576721,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 22784
+  },
+  {
+   "id": "egg_epic",
+   "category": "pets",
+   "file": "models/props/pets/egg_epic.glb",
+   "notes": "Hatching egg, epic (purple)",
+   "bounds": [
+    [
+     -0.19696155190467834,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.19696155190467834,
+     0.5200000214576721,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 22688
+  },
+  {
+   "id": "egg_legendary",
+   "category": "pets",
+   "file": "models/props/pets/egg_legendary.glb",
+   "notes": "Hatching egg, legendary (gold)",
+   "bounds": [
+    [
+     -0.19696155190467834,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.19696155190467834,
+     0.5200000214576721,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 22700
+  },
+  {
+   "id": "founder_statue",
+   "category": "pets",
+   "file": "models/props/pets/founder_statue.glb",
+   "notes": "Founder statue on pedestal - with a tiny stone snail on the shoulder",
+   "bounds": [
+    [
+     -0.8999999761581421,
+     0.0,
+     -0.8999999761581421
+    ],
+    [
+     0.8999999761581421,
+     3.529000018239021,
+     0.8999999761581421
+    ]
+   ],
+   "bytes": 84424
+  },
+  {
+   "id": "stone_guardian",
+   "category": "pets",
+   "file": "models/props/pets/stone_guardian.glb",
+   "notes": "Stone Guardian golem (giant). Glow materials 'stone_glow_*' = its 'awake' light",
+   "bounds": [
+    [
+     -2.577599995136261,
+     -4.7683715642676816e-08,
+     -0.897599995136261
+    ],
+    [
+     2.577599995136261,
+     6.4000000524520875,
+     0.897599995136261
+    ]
+   ],
+   "bytes": 43960
   }
  ],
  "textures": {

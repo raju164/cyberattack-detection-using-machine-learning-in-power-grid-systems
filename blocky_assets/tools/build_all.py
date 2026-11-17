@@ -8,6 +8,7 @@ import characters as C  # noqa: E402
 import props as P  # noqa: E402
 import props_v4  # noqa: E402,F401  (registers video-4 props into P.PROPS)
 import props_v5  # noqa: E402,F401  (videos 5-7)
+import props_pets  # noqa: E402,F401  (pets, eggs, statue, guardian)
 import textures as T  # noqa: E402
 from glb import write_glb  # noqa: E402
 
