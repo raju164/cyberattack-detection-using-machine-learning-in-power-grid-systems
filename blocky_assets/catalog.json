@@ -572,6 +572,186 @@
    ]
   },
   {
+   "id": "robot_kid",
+   "file": "models/characters/robot_kid.glb",
+   "default_face": "worried",
+   "notes": "Hero of the robot reel: curly hair, yellow hoodie, teal backpack with bolt badge, no robot",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.3125
+    ],
+    [
+     0.494999997317791,
+     1.5563648760318756,
+     0.24503503739833832
+    ]
+   ],
+   "bytes": 59356,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "rival_blond",
+   "file": "models/characters/rival_blond.glb",
+   "default_face": "smug",
+   "notes": "Cocky rival: blond quiff, red/white varsity jacket",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.5532492816448211,
+     0.21446247398853302
+    ]
+   ],
+   "bytes": 31536,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "ringmaster",
+   "file": "models/characters/ringmaster.glb",
+   "default_face": "happy",
+   "notes": "Arena announcer: top hat, black tux, red bow tie",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.3187499940395355
+    ],
+    [
+     0.494999997317791,
+     1.7600000023841857,
+     0.3187499940395355
+    ]
+   ],
+   "bytes": 48104,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "academy_student_1",
+   "file": "models/characters/academy_student_1.glb",
+   "default_face": "determined",
+   "notes": "Robot Academy student uniform (blue tee, ring logo)",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.23200000822544098
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 36024,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "academy_student_2",
+   "file": "models/characters/academy_student_2.glb",
+   "default_face": "smile",
+   "notes": "Robot Academy student uniform (blue tee, ring logo)",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.5989999890327453,
+     0.21199999749660492
+    ]
+   ],
+   "bytes": 36432,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "academy_student_3",
+   "file": "models/characters/academy_student_3.glb",
+   "default_face": "smug",
+   "notes": "Robot Academy student uniform (blue tee, ring logo)",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.5532492816448211,
+     0.21446247398853302
+    ]
+   ],
+   "bytes": 31752,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
    "id": "chicken",
    "file": "models/characters/chicken.glb",
    "notes": "Blocky white chicken (the 'good morning' rooster)",
@@ -1710,6 +1890,671 @@
     ]
    ],
    "bytes": 10568
+  },
+  {
+   "id": "robot_helper_yellow",
+   "category": "robots",
+   "file": "models/props/robots/robot_helper_yellow.glb",
+   "notes": "Little one-wheel helper bot (the hero's eventual robot)",
+   "bounds": [
+    [
+     -0.4224000022411347,
+     0.024000000953674328,
+     -0.17599999904632568
+    ],
+    [
+     0.4224000022411347,
+     1.0400000104904177,
+     0.17599999904632568
+    ]
+   ],
+   "bytes": 43304
+  },
+  {
+   "id": "robot_brawler_orange",
+   "category": "robots",
+   "file": "models/props/robots/robot_brawler_orange.glb",
+   "notes": "Chunky orange brawler with big fists",
+   "bounds": [
+    [
+     -0.5832000058889389,
+     -1.1920928910669204e-08,
+     -0.20000000298023224
+    ],
+    [
+     0.5832000058889389,
+     1.6000000131130219,
+     0.21000000834465027
+    ]
+   ],
+   "bytes": 43932
+  },
+  {
+   "id": "robot_tank_red",
+   "category": "robots",
+   "file": "models/props/robots/robot_tank_red.glb",
+   "notes": "Heavy red tank bot, oversized grey fists",
+   "bounds": [
+    [
+     -0.7799999952316284,
+     -1.4901161193847656e-08,
+     -0.2549999952316284
+    ],
+    [
+     0.7799999952316284,
+     2.0000000163912772,
+     0.26250001043081284
+    ]
+   ],
+   "bytes": 44008
+  },
+  {
+   "id": "robot_scout_purple",
+   "category": "robots",
+   "file": "models/props/robots/robot_scout_purple.glb",
+   "notes": "Slim purple scout with pink glow",
+   "bounds": [
+    [
+     -0.42699999809265143,
+     -1.1920928910669204e-08,
+     -0.20000000298023224
+    ],
+    [
+     0.42699999809265143,
+     1.6000000131130219,
+     0.21000000834465027
+    ]
+   ],
+   "bytes": 44000
+  },
+  {
+   "id": "robot_paladin_white",
+   "category": "robots",
+   "file": "models/props/robots/robot_paladin_white.glb",
+   "notes": "White/gold knight bot with pink energy saber",
+   "bounds": [
+    [
+     -0.607200003221631,
+     -1.3709068324985196e-08,
+     -0.23000000342726706
+    ],
+    [
+     0.607200003221631,
+     1.840000015079975,
+     1.092500054836273
+    ]
+   ],
+   "bytes": 48560
+  },
+  {
+   "id": "robot_titan_black",
+   "category": "robots",
+   "file": "models/props/robots/robot_titan_black.glb",
+   "notes": "Titan Zero in its prime: black armour, cyan glow, antenna ears",
+   "bounds": [
+    [
+     -0.9167999954223635,
+     -1.9073486234866266e-08,
+     -0.3200000047683716
+    ],
+    [
+     0.9167999954223635,
+     2.863954002380371,
+     0.3360000133514405
+    ]
+   ],
+   "bytes": 42480
+  },
+  {
+   "id": "robot_rookie_blue",
+   "category": "robots",
+   "file": "models/props/robots/robot_rookie_blue.glb",
+   "notes": "Generic academy bot",
+   "bounds": [
+    [
+     -0.5280000028014183,
+     -1.1920928910669204e-08,
+     -0.20000000298023224
+    ],
+    [
+     0.5280000028014183,
+     1.6000000131130219,
+     0.21000000834465027
+    ]
+   ],
+   "bytes": 43964
+  },
+  {
+   "id": "robot_rookie_green",
+   "category": "robots",
+   "file": "models/props/robots/robot_rookie_green.glb",
+   "notes": "Generic academy bot",
+   "bounds": [
+    [
+     -0.42699999809265143,
+     -1.1920928910669204e-08,
+     -0.20000000298023224
+    ],
+    [
+     0.42699999809265143,
+     1.6000000131130219,
+     0.21000000834465027
+    ]
+   ],
+   "bytes": 44000
+  },
+  {
+   "id": "titan_zero_statue",
+   "category": "robots",
+   "file": "models/props/robots/titan_zero_statue.glb",
+   "notes": "Titan Zero stone statue on pedestal with plaque (town square monument)",
+   "bounds": [
+    [
+     -1.833599990844727,
+     0.0,
+     -1.5
+    ],
+    [
+     1.833599990844727,
+     7.227908004760742,
+     1.5149999856948853
+    ]
+   ],
+   "bytes": 157220
+  },
+  {
+   "id": "hospital_bed",
+   "category": "hospital",
+   "file": "models/props/hospital/hospital_bed.glb",
+   "notes": "Hospital bed with mint sheets and cyan glow strip",
+   "bounds": [
+    [
+     -0.5099999904632568,
+     0.0,
+     -1.0399999618530273
+    ],
+    [
+     0.5099999904632568,
+     1.25,
+     1.0099999904632568
+    ]
+   ],
+   "bytes": 15788
+  },
+  {
+   "id": "heart_monitor",
+   "category": "hospital",
+   "file": "models/props/hospital/heart_monitor.glb",
+   "notes": "Heart-rate monitor on a stand",
+   "bounds": [
+    [
+     -0.2800000011920929,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.2800000011920929,
+     1.6400001049041748,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 11100
+  },
+  {
+   "id": "neon_no_robot",
+   "category": "hospital",
+   "file": "models/props/hospital/neon_no_robot.glb",
+   "notes": "Red neon wall sign 'NO ROBOT FOUND'",
+   "bounds": [
+    [
+     -0.699999988079071,
+     0.0,
+     -0.029999999329447746
+    ],
+    [
+     0.699999988079071,
+     0.550000011920929,
+     0.03099999949336052
+    ]
+   ],
+   "bytes": 37916
+  },
+  {
+   "id": "fight_ring",
+   "category": "arena",
+   "file": "models/props/arena/fight_ring.glb",
+   "notes": "Octagonal robot fight ring with glowing edge",
+   "bounds": [
+    [
+     -3.6955180168151855,
+     0.0,
+     -3.6955180168151855
+    ],
+    [
+     3.6955180168151855,
+     0.46330124139785767,
+     3.6955180168151855
+    ]
+   ],
+   "bytes": 22436
+  },
+  {
+   "id": "stadium_stand",
+   "category": "arena",
+   "file": "models/props/arena/stadium_stand.glb",
+   "notes": "Stadium stand section with seated crowd blocks",
+   "bounds": [
+    [
+     -6.0,
+     0.0,
+     -5.5
+    ],
+    [
+     6.0,
+     4.25,
+     0.5
+    ]
+   ],
+   "bytes": 188764
+  },
+  {
+   "id": "mega_arena_gate",
+   "category": "arena",
+   "file": "models/props/arena/mega_arena_gate.glb",
+   "notes": "MEGA ARENA entrance gate with gold towers",
+   "bounds": [
+    [
+     -5.909999847412109,
+     0.0,
+     -1.0499999523162842
+    ],
+    [
+     5.909999847412109,
+     8.600000381469727,
+     1.0499999523162842
+    ]
+   ],
+   "bytes": 23272
+  },
+  {
+   "id": "robot_academy",
+   "category": "academy",
+   "file": "models/props/academy/robot_academy.glb",
+   "notes": "ROBOT ACADEMY building facade with banners",
+   "bounds": [
+    [
+     -6.199999809265137,
+     0.0,
+     -3.200000047683716
+    ],
+    [
+     6.199999809265137,
+     7.449999809265137,
+     3.200000047683716
+    ]
+   ],
+   "bytes": 194152
+  },
+  {
+   "id": "ranking_board",
+   "category": "academy",
+   "file": "models/props/academy/ranking_board.glb",
+   "notes": "Rankings board (TYLER / KENDRA / BROCK), swap 'ranking_tex'",
+   "bounds": [
+    [
+     -0.800000011920929,
+     0.0,
+     -0.05000000074505806
+    ],
+    [
+     0.800000011920929,
+     1.600000023841858,
+     0.050999999046325684
+    ]
+   ],
+   "bytes": 24836
+  },
+  {
+   "id": "upgrade_terminal",
+   "category": "academy",
+   "file": "models/props/academy/upgrade_terminal.glb",
+   "notes": "Robot upgrade terminal (glowing screen kiosk)",
+   "bounds": [
+    [
+     -0.4099999964237213,
+     0.0,
+     -0.25999999046325684
+    ],
+    [
+     0.4099999964237213,
+     2.0250000953674316,
+     0.25999999046325684
+    ]
+   ],
+   "bytes": 9848
+  },
+  {
+   "id": "hall_of_fame",
+   "category": "academy",
+   "file": "models/props/academy/hall_of_fame.glb",
+   "notes": "Hall of Fame wall: WINS 100 / LOSSES 0 + trophies",
+   "bounds": [
+    [
+     -1.100000023841858,
+     0.0,
+     -0.05999999865889549
+    ],
+    [
+     1.100000023841858,
+     2.200000047683716,
+     0.061000000685453415
+    ]
+   ],
+   "bytes": 19668
+  },
+  {
+   "id": "gold_coin",
+   "category": "arena",
+   "file": "models/props/arena/gold_coin.glb",
+   "notes": "Gold coin (spin it) - also used for 'dollars' shots",
+   "bounds": [
+    [
+     -0.15000000596046448,
+     0.0,
+     -0.017500000074505806
+    ],
+    [
+     0.15000000596046448,
+     0.30000001192092896,
+     0.017500000074505806
+    ]
+   ],
+   "bytes": 10900
+  },
+  {
+   "id": "coin_pile",
+   "category": "arena",
+   "file": "models/props/arena/coin_pile.glb",
+   "notes": "Pile of gold coins",
+   "bounds": [
+    [
+     -0.7021494507789612,
+     -0.05197272077202797,
+     -0.6348896026611328
+    ],
+    [
+     0.7132809162139893,
+     0.31208863854408264,
+     0.674980103969574
+    ]
+   ],
+   "bytes": 121520
+  },
+  {
+   "id": "energy_orb",
+   "category": "arena",
+   "file": "models/props/arena/energy_orb.glb",
+   "notes": "Pink energy orb / power-up (emissive)",
+   "bounds": [
+    [
+     -0.44999998807907104,
+     -0.1499999761581421,
+     -0.44999998807907104
+    ],
+    [
+     0.44999998807907104,
+     0.75,
+     0.44999998807907104
+    ]
+   ],
+   "bytes": 25736
+  },
+  {
+   "id": "emblem_banner",
+   "category": "arena",
+   "file": "models/props/arena/emblem_banner.glb",
+   "notes": "Flag banner on pole with Titan emblem",
+   "bounds": [
+    [
+     -0.05000000074505806,
+     0.0,
+     -0.05000000074505806
+    ],
+    [
+     1.0499999523162842,
+     4.0,
+     0.05000000074505806
+    ]
+   ],
+   "bytes": 90068
+  },
+  {
+   "id": "skyscraper_blue",
+   "category": "city",
+   "file": "models/props/city/skyscraper_blue.glb",
+   "notes": "Skyscraper, blue glass (20 m)",
+   "bounds": [
+    [
+     -2.0,
+     0.0,
+     -2.0
+    ],
+    [
+     2.0,
+     21.0,
+     2.0
+    ]
+   ],
+   "bytes": 6940
+  },
+  {
+   "id": "skyscraper_pink",
+   "category": "city",
+   "file": "models/props/city/skyscraper_pink.glb",
+   "notes": "Skyscraper, pink (26 m)",
+   "bounds": [
+    [
+     -2.0,
+     0.0,
+     -2.0
+    ],
+    [
+     2.0,
+     27.0,
+     2.0
+    ]
+   ],
+   "bytes": 6928
+  },
+  {
+   "id": "skyscraper_yellow",
+   "category": "city",
+   "file": "models/props/city/skyscraper_yellow.glb",
+   "notes": "Skyscraper, yellow (16 m)",
+   "bounds": [
+    [
+     -2.0,
+     0.0,
+     -2.0
+    ],
+    [
+     2.0,
+     17.0,
+     2.0
+    ]
+   ],
+   "bytes": 6904
+  },
+  {
+   "id": "skyscraper_purple",
+   "category": "city",
+   "file": "models/props/city/skyscraper_purple.glb",
+   "notes": "Skyscraper, purple (30 m)",
+   "bounds": [
+    [
+     -2.5,
+     0.0,
+     -2.5
+    ],
+    [
+     2.5,
+     31.0,
+     2.5
+    ]
+   ],
+   "bytes": 6988
+  },
+  {
+   "id": "hover_ship",
+   "category": "city",
+   "file": "models/props/city/hover_ship.glb",
+   "notes": "Yellow hover-bus / flying ship",
+   "bounds": [
+    [
+     -2.496000051498413,
+     0.49803850054740906,
+     -1.403999924659729
+    ],
+    [
+     2.496000051498413,
+     1.9000000953674316,
+     1.403999924659729
+    ]
+   ],
+   "bytes": 38356
+  },
+  {
+   "id": "forest_tree_tall",
+   "category": "forest",
+   "file": "models/props/forest/forest_tree_tall.glb",
+   "notes": "Tall forest tree (straight trunk, round crown)",
+   "bounds": [
+    [
+     -2.799999952316284,
+     0.0,
+     -2.0
+    ],
+    [
+     2.9000000953674316,
+     11.90000057220459,
+     2.0
+    ]
+   ],
+   "bytes": 28184
+  },
+  {
+   "id": "mossy_log",
+   "category": "forest",
+   "file": "models/props/forest/mossy_log.glb",
+   "notes": "Mossy fallen log",
+   "bounds": [
+    [
+     -2.009999990463257,
+     0.0,
+     -0.5
+    ],
+    [
+     2.009999990463257,
+     1.0,
+     0.5
+    ]
+   ],
+   "bytes": 18724
+  },
+  {
+   "id": "spotted_mushroom",
+   "category": "forest",
+   "file": "models/props/forest/spotted_mushroom.glb",
+   "notes": "Spotted white mushroom (black dots)",
+   "bounds": [
+    [
+     -0.2800000011920929,
+     0.0,
+     -0.2800000011920929
+    ],
+    [
+     0.2800000011920929,
+     0.5040000081062317,
+     0.2800000011920929
+    ]
+   ],
+   "bytes": 14472
+  },
+  {
+   "id": "emblem_seal_cyan",
+   "category": "forest",
+   "file": "models/props/forest/emblem_seal_cyan.glb",
+   "notes": "Glowing cyan Titan emblem floor seal (hidden underground plate)",
+   "bounds": [
+    [
+     -1.600000023841858,
+     0.0,
+     -1.600000023841858
+    ],
+    [
+     1.600000023841858,
+     0.1599999964237213,
+     1.600000023841858
+    ]
+   ],
+   "bytes": 93812
+  },
+  {
+   "id": "emblem_seal_red",
+   "category": "forest",
+   "file": "models/props/forest/emblem_seal_red.glb",
+   "notes": "Red 'turned evil' Titan emblem floor seal",
+   "bounds": [
+    [
+     -1.600000023841858,
+     0.0,
+     -1.600000023841858
+    ],
+    [
+     1.600000023841858,
+     0.1599999964237213,
+     1.600000023841858
+    ]
+   ],
+   "bytes": 91216
+  },
+  {
+   "id": "soccer_ball",
+   "category": "sport",
+   "file": "models/props/sport/soccer_ball.glb",
+   "notes": "Soccer ball (white with black dots)",
+   "bounds": [
+    [
+     -0.11999999731779099,
+     0.0,
+     -0.11999999731779099
+    ],
+    [
+     0.11999999731779099,
+     0.23999999463558197,
+     0.11999999731779099
+    ]
+   ],
+   "bytes": 16244
+  },
+  {
+   "id": "soccer_goal",
+   "category": "sport",
+   "file": "models/props/sport/soccer_goal.glb",
+   "notes": "Soccer goal (white frame + net)",
+   "bounds": [
+    [
+     -3.059999942779541,
+     0.0,
+     -1.5399999618530273
+    ],
+    [
+     3.059999942779541,
+     2.259999990463257,
+     0.05999999865889549
+    ]
+   ],
+   "bytes": 10924
   }
  ],
  "textures": {
@@ -1736,11 +2581,13 @@
    "sleeping"
   ],
   "outfits": [
+   "academy_tee_blue",
    "button_shirt_orange",
    "dress_pink",
    "hoodie_green",
    "hoodie_red",
    "hoodie_yellow",
+   "hoodie_yellow_green_strings",
    "jersey_blue_10",
    "overalls",
    "pajama_pink",
@@ -1751,7 +2598,8 @@
    "stripes_green_black",
    "stripes_red_white",
    "suit_black",
-   "suit_gold_sequin_bowtie"
+   "suit_gold_sequin_bowtie",
+   "varsity_red_white"
   ],
   "signs": [
    "cafeteria",
@@ -1794,18 +2642,29 @@
    "calendar_wed",
    "caption_example_green",
    "caption_example_white",
+   "caption_example_yellow",
    "chalkboard_history_of_dust",
    "costume_contest",
+   "ecg_screen",
+   "emblem_titan_cyan",
+   "emblem_titan_gold",
+   "emblem_titan_red",
+   "hall_of_fame_titan_zero",
    "mood_dial_face",
+   "neon_no_robot_found",
    "newspaper_blank",
    "newspaper_front",
    "poster_starlight_princess",
    "power_plant",
+   "ranking_board",
    "shop_cafe",
    "shop_lamps_bulbs",
    "shop_mushrooms",
+   "sign_mega_arena",
+   "sign_robot_academy",
    "speech_blank",
    "speech_good_morning",
+   "titan_zero_vanished",
    "town_rule_example"
   ],
   "surfaces": [
@@ -1813,10 +2672,14 @@
    "brick_red",
    "cobble",
    "grass",
+   "moss",
    "road",
    "siding_navy",
    "siding_pink",
    "siding_white",
+   "skyscraper_blue",
+   "skyscraper_pink",
+   "soccer_ball_dots",
    "tiles_floor",
    "window_day",
    "window_lit",

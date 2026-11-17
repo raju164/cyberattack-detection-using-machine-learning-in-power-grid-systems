@@ -84,6 +84,26 @@ def hair(head, style, color):
                     head.add(sphere(hw * 0.2, 8, 6), m, t=(sx * hw * 0.72, top - hh * (0.6 + k * 0.4), -hd * 0.1))
     elif style == "buzz":
         head.add(box(hw * 1.03, hh * 0.12, hd * 1.03), m, t=(0, top - hh * 0.03, 0))
+    elif style == "curly":
+        head.add(box(hw * 1.06, hh * 0.22, hd * 1.06), m, t=(0, top - hh * 0.02, 0))
+        import random as _r
+        rnd = _r.Random(12)
+        for gx in range(4):
+            for gz in range(4):
+                x = (gx - 1.5) * hw * 0.27
+                z = (gz - 1.5) * hd * 0.27
+                sz = hw * rnd.uniform(0.26, 0.34)
+                head.add(box(sz, sz * 0.8, sz), m, t=(x, top + hh * rnd.uniform(0.12, 0.24), z),
+                         r=(rnd.uniform(-12, 12), rnd.uniform(0, 45), rnd.uniform(-12, 12)))
+        head.add(box(hw * 1.06, hh * 0.5, hd * 0.12), m, t=(0, top - hh * 0.25, -hd * 0.5))
+        for sx in (-1, 1):
+            head.add(box(hw * 0.08, hh * 0.3, hd * 0.8), m, t=(sx * hw * 0.53, top - hh * 0.15, -hd * 0.05))
+    elif style == "quiff":
+        head.add(box(hw * 1.06, hh * 0.24, hd * 1.06), m, t=(0, top, 0))
+        head.add(box(hw * 1.0, hh * 0.3, hd * 0.45), m, t=(0, top + hh * 0.18, hd * 0.28), r=(-15, 0, 0))
+        head.add(box(hw * 1.06, hh * 0.45, hd * 0.1), m, t=(0, top - hh * 0.2, -hd * 0.52))
+        for sx in (-1, 1):
+            head.add(box(hw * 0.08, hh * 0.3, hd * 0.8), m, t=(sx * hw * 0.53, top - hh * 0.15, -hd * 0.05))
     elif style == "bun":
         head.add(box(hw * 1.06, hh * 0.24, hd * 1.06), m, t=(0, top, 0))
         head.add(sphere(hw * 0.28, 10, 8), m, t=(0, top + hh * 0.2, -hd * 0.25))
@@ -134,6 +154,12 @@ def accessory(head, kind, **kw):
         m = M(f"cap_{kw.get('color', '#d33')}", kw.get("color", "#d33333"))
         head.add(hemisphere(hw * 0.58, 16, 6, squash=0.55), m, t=(0, top - 0.01, 0), s=(1, 1, hd / hw))
         head.add(box(hw * 0.7, 0.015, hd * 0.45), m, t=(0, top - 0.01, hd * 0.62))
+    elif kind == "top_hat":
+        m = M("hat_black", "#151515", rough=0.5)
+        band = M("hat_band_gold", "#d9a520", metal=0.6, rough=0.3)
+        head.add(cylinder(hw * 0.75, 0.02, 20), m, t=(0, top + 0.01, 0))
+        head.add(cylinder(hw * 0.45, hh * 0.9, 20), m, t=(0, top + hh * 0.45, 0))
+        head.add(cylinder(hw * 0.46, hh * 0.12, 20), band, t=(0, top + hh * 0.08, 0))
     elif kind == "headphones":
         m = M("headphones", "#222222")
         head.add(torus(hw * 0.58, 0.015, 20, 6), m, t=(0, top - 0.02, 0), r=(0, 0, 90), s=(1, 1, 0.4))
@@ -150,6 +176,11 @@ def body_accessory(root_parts, kind, **kw):
         torso.add(box(1.2 * U, 0.6 * U, 0.2 * U), m, t=(0, 2.6 * U - 2 * U, -1.15 * U))
         for sx in (-1, 1):
             torso.add(box(0.2 * U, 2 * U, 0.06), strap, t=(sx * 0.55 * U, 3 * U - 2 * U, 0.52 * U))
+        if kw.get("badge"):
+            torso.add(transform(cylinder(0.35 * U, 0.02, 16), r=(90, 0, 0)), M("badge_navy", "#1d2f80"),
+                      t=(0, 1.2 * U, -1.11 * U))
+            torso.add(box(0.12 * U, 0.45 * U, 0.01), M("badge_bolt", "#ffd21e", emissive="#ffd21e",
+                      emissive_strength=0.5), t=(0, 1.2 * U, -1.13 * U), r=(0, 0, 20))
     elif kind == "wings":
         m = M("wings", "#ffffff", rough=0.6, emissive="#ffe9a8", emissive_strength=0.3)
         for sx in (-1, 1):
@@ -316,4 +347,22 @@ def cast():
     for i, (shirt, pants, hc, hs) in enumerate(tf):
         C.append(dict(id=f"townsfolk_{i + 1}", skin=skins[i], face=["smile", "neutral", "happy", "worried", "smug", "laugh"][i],
                       hair=hs, hair_color=hc, torso_side=shirt, pants=pants, notes="Background crowd / townsperson"))
+    # ---- video 4 (robot-battle city)
+    C.append(dict(id="robot_kid", skin="#c08a5c", face="worried", hair="curly", hair_color="#4a2a16",
+                  torso_front=T.hoodie_front((245, 195, 30), string=(40, 180, 140)), torso_side="#f5c31e",
+                  sleeves="#f5c31e", sleeve_len=1.7, pants="#24346e", shoes="#d83a3a",
+                  body_acc=[("backpack", {"color": "#2fae96", "badge": True})],
+                  notes="Hero of the robot reel: curly hair, yellow hoodie, teal backpack with bolt badge, no robot"))
+    C.append(dict(id="rival_blond", skin="#f6d6b8", face="smug", hair="quiff", hair_color="#f2d33a",
+                  torso_front=T.varsity_jacket(), torso_side="#d0262e", sleeves="#d0262e", pants="#151a2a",
+                  shoes="#f0f0f0", notes="Cocky rival: blond quiff, red/white varsity jacket"))
+    C.append(dict(id="ringmaster", skin="#f2cfa8", face="happy", hair="side_part", hair_color="#3a2414",
+                  head_acc=["top_hat"], torso_front=T.suit_front((20, 20, 24), tie=(200, 30, 30), bowtie=True),
+                  torso_side="#16161a", sleeves="#16161a", pants="#16161a",
+                  notes="Arena announcer: top hat, black tux, red bow tie"))
+    for i, (sk, hs, hc) in enumerate((("#f6d3b0", "messy", "#6b3a1a"), ("#8a5634", "bun", "#151515"),
+                                      ("#e8b98e", "quiff", "#f0c84a"))):
+        C.append(dict(id=f"academy_student_{i + 1}", skin=sk, face=["determined", "smile", "smug"][i], hair=hs,
+                      hair_color=hc, torso_front=T.academy_tee(), torso_side="#2f7fd8", sleeves="#2f7fd8",
+                      pants="#1e2440", notes="Robot Academy student uniform (blue tee, ring logo)"))
     return C

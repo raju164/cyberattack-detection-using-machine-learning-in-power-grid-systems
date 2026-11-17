@@ -530,11 +530,135 @@ def soft_glow(color=(255, 230, 150), size=256):
     return im
 
 
-def caption_card(word="TOWN", highlight=True, w=1024, h=256):
+def caption_card(word="TOWN", highlight=True, w=1024, h=256, yellow=False):
     """Example of the bold outlined caption style used in the references."""
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     f = font(150)
-    fill = (60, 230, 60, 255) if highlight else WHITE
+    fill = (255, 214, 0, 255) if yellow else (60, 230, 60, 255) if highlight else WHITE
     d.text((w / 2, h / 2), word, font=f, fill=fill, anchor="mm", stroke_width=10, stroke_fill=(0, 0, 0, 255))
+    return im
+
+
+def varsity_jacket(body=(208, 38, 46), sleeve=(245, 245, 245), size=256):
+    im = Image.new("RGB", (size, size), body)
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, 50, size], fill=sleeve)
+    d.rectangle([206, 0, size, size], fill=sleeve)
+    d.rectangle([108, 0, 148, size], fill=(245, 245, 245))  # open front shows white tee
+    d.rectangle([0, 230, size, size], fill=(30, 30, 40))     # ribbed hem
+    for x in (98, 158):
+        for y in (60, 120, 180):
+            d.ellipse([x - 6, y, x + 6, y + 12], fill=(230, 230, 230))
+    return im
+
+
+def academy_tee(color=(47, 127, 216), size=256):
+    im = Image.new("RGB", (size, size), color)
+    d = ImageDraw.Draw(im)
+    d.ellipse([88, 70, 168, 150], outline=(255, 255, 255), width=12)
+    d.rectangle([0, 0, size, 10], fill=(255, 255, 255))
+    return im
+
+
+def emblem(color=(80, 220, 255), size=512, crown=True):
+    """Titan emblem: ring + lightning bolt + flame crown (transparent)."""
+    im = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    c = size / 2
+    d.ellipse([70, 110, size - 70, size - 30], outline=color + (255,), width=34)
+    if crown:
+        d.polygon([(150, 150), (180, 30), (220, 120), (256, 10), (292, 120), (332, 30), (362, 150)], fill=color + (255,))
+    d.polygon([(290, 150), (200, 310), (262, 300), (220, 440), (330, 260), (268, 270), (318, 150)], fill=color + (255,))
+    glow = im.filter(ImageFilter.GaussianBlur(14))
+    out = Image.alpha_composite(glow, im)
+    return out
+
+
+def neon_text(text, color=(255, 60, 90), w=1024, h=384, bg=(60, 10, 20)):
+    im = Image.new("RGB", (w, h), bg)
+    d = ImageDraw.Draw(im)
+    d.rectangle([10, 10, w - 11, h - 11], outline=color, width=10)
+    lines = text.split("\n")
+    fs = int(h / (len(lines) + 1))
+    f = font(fs, FONT_SERIF)
+    for i, ln in enumerate(lines):
+        d.text((w / 2, h * (i + 1) / (len(lines) + 1)), ln, font=f, fill=(255, 220, 225), anchor="mm",
+               stroke_width=3, stroke_fill=color)
+    return im
+
+
+def ranking_board(title="RANKINGS", names=("1  TYLER", "2  KENDRA", "3  BROCK"), w=512, h=512):
+    im = Image.new("RGB", (w, h), (15, 20, 50))
+    d = ImageDraw.Draw(im)
+    d.rectangle([6, 6, w - 7, h - 7], outline=(255, 210, 40), width=8)
+    d.text((w / 2, 70), title, font=font(60, FONT_SERIF), fill=(255, 220, 60), anchor="mm")
+    for i, n in enumerate(names):
+        d.text((50, 160 + i * 90), n, font=font(54, FONT_SERIF), fill=(255, 255, 255))
+    return im
+
+
+def hall_of_fame(name="TITAN ZERO", wins="100", losses="0", w=512, h=512):
+    im = Image.new("RGB", (w, h), (30, 20, 10))
+    d = ImageDraw.Draw(im)
+    gold = (235, 190, 90)
+    d.text((w / 2, 50), f"{name} · HALL OF FAME", font=font(30, FONT_SERIF), fill=gold, anchor="mm")
+    d.rectangle([40, 90, w - 40, 300], outline=gold, width=6)
+    d.text((70, 150), "WINS:", font=font(40, FONT_SERIF), fill=(250, 240, 220), anchor="lm")
+    d.text((w - 70, 150), wins, font=font(70, FONT_SERIF), fill=(255, 255, 255), anchor="rm")
+    d.line([(60, 195), (w - 60, 195)], fill=gold, width=3)
+    d.text((70, 250), "LOSSES:", font=font(40, FONT_SERIF), fill=(250, 240, 220), anchor="lm")
+    d.text((w - 70, 250), losses, font=font(70, FONT_SERIF), fill=(255, 255, 255), anchor="rm")
+    for r in range(3):
+        for c in range(8):
+            x, y = 50 + c * 58, 330 + r * 60
+            d.polygon([(x, y), (x + 34, y), (x + 26, y + 26), (x + 8, y + 26)], fill=gold)
+            d.rectangle([x + 14, y + 26, x + 20, y + 40], fill=gold)
+            d.rectangle([x + 6, y + 40, x + 28, y + 46], fill=gold)
+    return im
+
+
+def ecg_screen(w=512, h=320, color=(60, 255, 140)):
+    im = Image.new("RGB", (w, h), (10, 25, 30))
+    d = ImageDraw.Draw(im)
+    pts, x = [], 0
+    while x < w:
+        pts += [(x, 170), (x + 40, 170), (x + 55, 120), (x + 65, 230), (x + 78, 60), (x + 90, 200), (x + 100, 170)]
+        x += 130
+    d.line(pts, fill=color, width=6)
+    d.polygon([(w - 70, 40), (w - 50, 20), (w - 30, 40), (w - 50, 65)], fill=(255, 80, 120))
+    return im
+
+
+def soccer_ball(size=512):
+    im = Image.new("RGB", (size, size // 2), (245, 245, 245))
+    d = ImageDraw.Draw(im)
+    rnd = random.Random(21)
+    for _ in range(34):
+        x, y = rnd.randrange(size), rnd.randrange(30, size // 2 - 30)
+        r = rnd.randint(9, 13)
+        d.ellipse([x - r, y - r, x + r, y + r], fill=(15, 15, 15))
+    return im
+
+
+def skyscraper(base=(70, 140, 230), win=(200, 235, 255), w=256, h=1024, seed=0):
+    rnd = random.Random(seed)
+    im = Image.new("RGB", (w, h), base)
+    d = ImageDraw.Draw(im)
+    for y in range(12, h, 36):
+        for x in range(12, w, 34):
+            c = win if rnd.random() > 0.15 else tuple(int(v * 0.7) for v in base)
+            d.rectangle([x, y, x + 20, y + 24], fill=c)
+    return im
+
+
+def moss(size=256):
+    rnd = random.Random(31)
+    im = Image.new("RGB", (size, size), (60, 150, 50))
+    d = ImageDraw.Draw(im)
+    for _ in range(500):
+        x, y = rnd.randrange(size), rnd.randrange(size)
+        r = rnd.randint(2, 7)
+        c = rnd.choice([(80, 175, 60), (45, 120, 40), (150, 120, 50), (180, 70, 50), (100, 190, 70)])
+        d.ellipse([x - r, y - r, x + r, y + r], fill=c)
     return im

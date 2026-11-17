@@ -6,6 +6,7 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import characters as C  # noqa: E402
 import props as P  # noqa: E402
+import props_v4  # noqa: E402,F401  (registers video-4 props into P.PROPS)
 import textures as T  # noqa: E402
 from glb import write_glb  # noqa: E402
 
@@ -66,7 +67,8 @@ def main(only=None):
         "hoodie_red": T.hoodie_front((210, 50, 50)), "suit_black": T.suit_front((40, 40, 45)),
         "suit_gold_sequin_bowtie": T.suit_front((200, 150, 40), bowtie=True, sparkle=True),
         "school_uniform_black": T.school_uniform(), "school_uniform_brown": T.school_uniform((95, 60, 40)),
-        "jersey_blue_10": T.jersey((30, 50, 160)), "overalls": T.overalls(), "pajama_pink": T.pajama(),
+        "jersey_blue_10": T.jersey((30, 50, 160)), "varsity_red_white": T.varsity_jacket(),
+        "academy_tee_blue": T.academy_tee(), "hoodie_yellow_green_strings": T.hoodie_front((245, 195, 30), (40, 180, 140)), "overalls": T.overalls(), "pajama_pink": T.pajama(),
         "button_shirt_orange": T.button_shirt(), "dress_pink": T.dress_pink(),
         "plaid_grey": T.plaid((45, 45, 50), (110, 110, 120)), "plaid_red": T.plaid((170, 30, 40), (40, 30, 30)),
     }
@@ -94,6 +96,17 @@ def main(only=None):
         "caption_example_green": T.caption_card("TOWN", True),
         "caption_example_white": T.caption_card("in this", False),
     }
+    signs.update({
+        "neon_no_robot_found": T.neon_text("NO ROBOT\nFOUND"), "ranking_board": T.ranking_board(),
+        "hall_of_fame_titan_zero": T.hall_of_fame(), "ecg_screen": T.ecg_screen(),
+        "emblem_titan_cyan": T.emblem((80, 220, 255)), "emblem_titan_red": T.emblem((255, 80, 60)),
+        "emblem_titan_gold": T.emblem((255, 200, 30)), "sign_mega_arena": T.sign("MEGA ARENA", bg=(120, 90, 40),
+                                                                                fg=(255, 240, 200), serif=True),
+        "sign_robot_academy": T.sign("ROBOT ACADEMY", bg=(40, 60, 160), fg=(255, 230, 120), serif=True,
+                                     border=(255, 210, 40)),
+        "titan_zero_vanished": T.neon_text("TITAN ZERO\nVANISHED", color=(200, 200, 200), bg=(30, 30, 30)),
+        "caption_example_yellow": T.caption_card("robots", False, yellow=True),
+    })
     for i in range(1, 31):
         signs[f"calendar_day_{i:02d}"] = T.calendar_page("NOVEMBER", f"DAY {i}")
     for wd in ("MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"):
@@ -107,7 +120,9 @@ def main(only=None):
             "brick_red": T.brick(), "brick_dark": T.brick((70, 70, 75), (40, 40, 45)), "siding_white": T.siding(),
             "siding_pink": T.siding((245, 185, 205)), "siding_navy": T.siding((60, 80, 140)),
             "window_day": T.window_grid(), "window_lit": T.window_grid(lit=True), "road": T.road(),
-            "tiles_floor": T.tiles(), "cobble": T.cobble(), "grass": T.grass()}
+            "tiles_floor": T.tiles(), "cobble": T.cobble(), "grass": T.grass(), "moss": T.moss(),
+            "skyscraper_blue": T.skyscraper((63, 134, 230)), "skyscraper_pink": T.skyscraper((232, 122, 168), seed=2),
+            "soccer_ball_dots": T.soccer_ball()}
     for k, im in surf.items():
         im.save(os.path.join(udir, f"{k}.png"))
     catalog["textures"]["surfaces"] = sorted(surf)
