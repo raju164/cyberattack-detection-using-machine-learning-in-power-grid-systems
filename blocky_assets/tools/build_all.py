@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import characters as C  # noqa: E402
 import props as P  # noqa: E402
 import props_v4  # noqa: E402,F401  (registers video-4 props into P.PROPS)
+import props_v5  # noqa: E402,F401  (videos 5-7)
 import textures as T  # noqa: E402
 from glb import write_glb  # noqa: E402
 
@@ -68,7 +69,9 @@ def main(only=None):
         "suit_gold_sequin_bowtie": T.suit_front((200, 150, 40), bowtie=True, sparkle=True),
         "school_uniform_black": T.school_uniform(), "school_uniform_brown": T.school_uniform((95, 60, 40)),
         "jersey_blue_10": T.jersey((30, 50, 160)), "varsity_red_white": T.varsity_jacket(),
-        "academy_tee_blue": T.academy_tee(), "hoodie_yellow_green_strings": T.hoodie_front((245, 195, 30), (40, 180, 140)), "overalls": T.overalls(), "pajama_pink": T.pajama(),
+        "academy_tee_blue": T.academy_tee(), "pixel_smiley_tee_green": T.pixel_face_tee(),
+        "text_tee_real_men_wear_pink": T.text_tee(), "knit_stripes": T.knit_stripes(), "hearts_pattern": T.hearts_pattern(),
+        "crest_blazer": T.crest_blazer(), "patterned_pants_grey": T.patterned_pants(), "hoodie_yellow_green_strings": T.hoodie_front((245, 195, 30), (40, 180, 140)), "overalls": T.overalls(), "pajama_pink": T.pajama(),
         "button_shirt_orange": T.button_shirt(), "dress_pink": T.dress_pink(),
         "plaid_grey": T.plaid((45, 45, 50), (110, 110, 120)), "plaid_red": T.plaid((170, 30, 40), (40, 30, 30)),
     }
@@ -106,6 +109,14 @@ def main(only=None):
                                      border=(255, 210, 40)),
         "titan_zero_vanished": T.neon_text("TITAN ZERO\nVANISHED", color=(200, 200, 200), bg=(30, 30, 30)),
         "caption_example_yellow": T.caption_card("robots", False, yellow=True),
+        "phone_chat_practice_number": T.phone_chat(), "phone_class_trip_photo": T.museum_photo(),
+        "sticky_note_practice": T.sticky_note(), "no_phones_in_class": T.sign("NO PHONES IN CLASS", bg=(255, 255, 255),
+                                                                              fg=(200, 30, 30), border=(200, 30, 30)),
+        "go_tigers": T.sign("GO TIGERS", bg=(30, 30, 30), fg=(255, 140, 30)),
+        "composition_cover": T.composition_cover(), "lined_paper_compliments": T.lined_paper(),
+        "night_sky_poster": T.night_sky_poster(), "banner_picture_day": T.banner_picture_day(),
+        "bulletin_board": T.bulletin_board(), "class_photo": T.photo_print(), "cash_bill": T.cash_bills(),
+        "caption_example_orange": T.caption_card("PRACTICE", False, color=(255, 120, 30)),
     })
     for i in range(1, 31):
         signs[f"calendar_day_{i:02d}"] = T.calendar_page("NOVEMBER", f"DAY {i}")
@@ -122,7 +133,8 @@ def main(only=None):
             "window_day": T.window_grid(), "window_lit": T.window_grid(lit=True), "road": T.road(),
             "tiles_floor": T.tiles(), "cobble": T.cobble(), "grass": T.grass(), "moss": T.moss(),
             "skyscraper_blue": T.skyscraper((63, 134, 230)), "skyscraper_pink": T.skyscraper((232, 122, 168), seed=2),
-            "soccer_ball_dots": T.soccer_ball()}
+            "soccer_ball_dots": T.soccer_ball(), "hardwood_red": T.wood((120, 50, 30), seed=9, planks=8),
+            "bookshelf_spines": T.book_spines()}
     for k, im in surf.items():
         im.save(os.path.join(udir, f"{k}.png"))
     catalog["textures"]["surfaces"] = sorted(surf)

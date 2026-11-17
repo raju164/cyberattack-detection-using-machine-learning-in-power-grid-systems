@@ -104,6 +104,24 @@ def hair(head, style, color):
         head.add(box(hw * 1.06, hh * 0.45, hd * 0.1), m, t=(0, top - hh * 0.2, -hd * 0.52))
         for sx in (-1, 1):
             head.add(box(hw * 0.08, hh * 0.3, hd * 0.8), m, t=(sx * hw * 0.53, top - hh * 0.15, -hd * 0.05))
+    elif style == "bald_sides":
+        for sx in (-1, 1):
+            head.add(box(hw * 0.1, hh * 0.35, hd * 0.5), m, t=(sx * hw * 0.53, top - hh * 0.38, -hd * 0.12))
+        head.add(box(hw * 1.04, hh * 0.25, hd * 0.08), m, t=(0, top - hh * 0.4, -hd * 0.51))
+    elif style == "ponytail":
+        head.add(box(hw * 1.08, hh * 0.26, hd * 1.08), m, t=(0, top, 0))
+        head.add(box(hw * 1.08, hh * 0.6, hd * 0.12), m, t=(0, top - hh * 0.3, -hd * 0.52))
+        head.add(box(hw * 0.25, hh * 1.1, hd * 0.25), m, t=(0, top - hh * 0.55, -hd * 0.68), r=(10, 0, 0))
+        for i, x in enumerate((-0.3, 0.0, 0.3)):
+            head.add(box(hw * 0.32, hh * 0.25, hd * 0.1), m, t=(x * hw, top - hh * 0.18, hd * 0.52))
+    elif style == "swoop":
+        head.add(box(hw * 1.08, hh * 0.32, hd * 1.08), m, t=(0, top + hh * 0.04, 0))
+        for i in range(5):
+            head.add(box(hw * 0.32, hh * 0.22, hd * 0.25), m,
+                     t=((i - 2) * hw * 0.22, top + hh * (0.12 + 0.05 * (i % 2)), hd * 0.35), r=(-25, 0, (i - 2) * 10))
+        head.add(box(hw * 1.08, hh * 0.55, hd * 0.12), m, t=(0, top - hh * 0.28, -hd * 0.52))
+        for sx in (-1, 1):
+            head.add(box(hw * 0.1, hh * 0.45, hd * 0.85), m, t=(sx * hw * 0.54, top - hh * 0.2, -hd * 0.04))
     elif style == "bun":
         head.add(box(hw * 1.06, hh * 0.24, hd * 1.06), m, t=(0, top, 0))
         head.add(sphere(hw * 0.28, 10, 8), m, t=(0, top + hh * 0.2, -hd * 0.25))
@@ -160,6 +178,21 @@ def accessory(head, kind, **kw):
         head.add(cylinder(hw * 0.75, 0.02, 20), m, t=(0, top + 0.01, 0))
         head.add(cylinder(hw * 0.45, hh * 0.9, 20), m, t=(0, top + hh * 0.45, 0))
         head.add(cylinder(hw * 0.46, hh * 0.12, 20), band, t=(0, top + hh * 0.08, 0))
+    elif kind == "dino_hat":
+        m = M("dino_hat_blue", kw.get("color", "#2aa8d8"), rough=0.8)
+        spike = M("dino_spike", "#ffd21e")
+        head.add(box(hw * 1.14, hh * 0.55, hd * 1.14), m, t=(0, top + hh * 0.05, -hd * 0.02))
+        head.add(box(hw * 0.9, hh * 0.35, hd * 0.6), m, t=(0, top + hh * 0.35, hd * 0.15))  # snout bump
+        for sx in (-1, 1):
+            head.add(sphere(hw * 0.1, 10, 8), M("eye_white", "#ffffff"), t=(sx * hw * 0.32, top + hh * 0.3, hd * 0.5))
+            head.add(sphere(hw * 0.06, 8, 6), M("eye_black", "#111111"), t=(sx * hw * 0.32, top + hh * 0.31, hd * 0.57))
+        for i in range(4):
+            head.add(cone(hw * 0.09, hh * 0.32, 4), spike, t=(0, top + hh * (0.45 - i * 0.12), hd * (0.05 - i * 0.22)),
+                     r=(-20 - i * 18, 45, 0))
+        head.add(box(hw * 1.15, hh * 0.08, hd * 0.12), M("dino_teeth", "#f2e6f8"), t=(0, top - hh * 0.18, hd * 0.53))
+    elif kind == "scarf":
+        m = M(f"scarf_{kw.get('color', '#c81e2a')}", kw.get("color", "#c81e2a"))
+        head.add(box(hw * 0.95, hh * 0.22, hd * 0.95), m, t=(0, -hh / 2 - hh * 0.05, 0))
     elif kind == "headphones":
         m = M("headphones", "#222222")
         head.add(torus(hw * 0.58, 0.015, 20, 6), m, t=(0, top - 0.02, 0), r=(0, 0, 90), s=(1, 1, 0.4))
@@ -347,6 +380,51 @@ def cast():
     for i, (shirt, pants, hc, hs) in enumerate(tf):
         C.append(dict(id=f"townsfolk_{i + 1}", skin=skins[i], face=["smile", "neutral", "happy", "worried", "smug", "laugh"][i],
                       hair=hs, hair_color=hc, torso_side=shirt, pants=pants, notes="Background crowd / townsperson"))
+    # ---- videos 5-7 (house comedy, classroom romance, school crush)
+    C.append(dict(id="hitman", skin="#f2cfa8", face="glare", hair="swoop", hair_color="#3a2414",
+                  head_acc=["sunglasses"], torso_front=T.suit_front((22, 22, 26), tie=(200, 30, 30)),
+                  torso_side="#16161a", sleeves="#16161a", pants="#16161a",
+                  notes="Hired 'hitman': slick hair, sunglasses, black suit, red tie"))
+    C.append(dict(id="little_brother", skin="#f6d3b0", face="troll_grin", hair="spiky", hair_color="#d9a24a",
+                  torso_front=T.pixel_face_tee(), torso_side="#46aa3c", sleeves="#46aa3c", sleeve_len=0.8,
+                  pants="#1a1f33", shoes="#f0f0f0", scale=0.8,
+                  notes="Cheeky little brother: blond spikes, green pixel-smiley tee"))
+    C.append(dict(id="dad_bald", skin="#f2cfa8", face="unimpressed", hair="bald_sides", hair_color="#5a3a22",
+                  torso_front=T.suit_front((245, 245, 245), (245, 245, 245), (120, 70, 40)), torso_side="#f2f2f2",
+                  sleeves="#f2f2f2", sleeve_len=1.0, pants="#5a4630", shoes="#2a1e14",
+                  notes="Dad: bald with side tufts, white shirt, brown tie"))
+    C.append(dict(id="narrator_glasses", skin="#f2cfa8", face="screaming", hair="bald_sides", hair_color="#3a2414",
+                  head_acc=[("glasses", {"color": "#222222"})], torso_front=T.suit_front((22, 22, 26), (40, 90, 170),
+                  (40, 90, 170)), torso_side="#16161a", sleeves="#16161a", pants="#16161a",
+                  notes="Panicking older sibling: glasses, black jacket over blue tee"))
+    C.append(dict(id="ginger_boy", skin="#f6d3b0", face="troll_grin", hair="messy", hair_color="#f06a1e",
+                  torso_front=T.text_tee(), torso_side="#141416", sleeves="#141416", sleeve_len=0.9,
+                  pants=T.hearts_pattern(), shoes="#f0f0f0",
+                  notes="Lovesick ginger: 'REAL MEN WEAR PINK' tee, heart pajama pants"))
+    C.append(dict(id="pink_hair_friend", skin="#f6d3b0", face="smirk", hair="spiky", hair_color="#f2a0b4",
+                  head_acc=[("scarf", {"color": "#c81e2a"})], torso_front=T.suit_front((20, 20, 26), (200, 30, 40),
+                  (200, 30, 40)), torso_side="#141418", sleeves="#141418", pants="#141418",
+                  notes="Wingman: pink spiky hair, red scarf, dark jacket"))
+    C.append(dict(id="crush_girl_pink", skin="#f6d3b0", face="blush_shy", lash=True, hair="long_bangs",
+                  hair_color="#101014", torso_front=T.dress_pink(), torso_side="#ffc0d8", sleeves="#ffc0d8",
+                  pants="#1e1e24", skirt="#1e1e24", shoes="#151515", notes="Crush: long black hair, pink top"))
+    C.append(dict(id="dino_hat_kid", skin="#ffd21e", face="anime_worried", hair=None, head_acc=["dino_hat"],
+                  torso_side="#16d0e8", sleeves="#ffd21e", sleeve_len=0.01, pants="#141414", shoes="#141414",
+                  notes="Classic yellow-skin kid: cyan tee, black pants, blue dino hood with yellow spikes"))
+    C.append(dict(id="sweater_boy", skin="#f6d3b0", face="shocked", hair="messy", hair_color="#5a3418",
+                  torso_front=T.knit_stripes(), torso_side=T.knit_stripes(), sleeves=T.knit_stripes(),
+                  pants=T.patterned_pants(), shoes="#2a2a2a", notes="Best friend: chunky striped knit sweater"))
+    C.append(dict(id="uniform_girl", skin="#f0c9a8", face="anime_smile", lash=True, hair="long_bangs",
+                  hair_color="#0c0c10", torso_front=T.crest_blazer(), torso_side="#18181c", sleeves="#18181c",
+                  pants="#f0c9a8", skirt=T.plaid((60, 60, 66), (200, 200, 210)), socks="#f4f4f4", shoes="#0e0e0e",
+                  notes="Crush in academy uniform: crest blazer, plaid skirt, knee socks"))
+    C.append(dict(id="ponytail_girl", skin="#f6d3b0", face="anime_shocked", lash=True, hair="ponytail",
+                  hair_color="#121216", torso_front=T.crest_blazer(), torso_side="#18181c", sleeves="#18181c",
+                  pants="#f6d3b0", skirt=T.plaid((60, 60, 66), (200, 200, 210)), socks="#f4f4f4", shoes="#0e0e0e",
+                  notes="Same uniform, ponytail (the 'new haircut' look)"))
+    C.append(dict(id="blonde_girl", skin="#f6d3b0", face="happy", lash=True, hair="pigtails", hair_color="#f2d06a",
+                  torso_side="#f4a8c8", sleeves="#f4a8c8", pants="#7a6aa8", notes="Blonde classmate, pink sweater"))
+
     # ---- video 4 (robot-battle city)
     C.append(dict(id="robot_kid", skin="#c08a5c", face="worried", hair="curly", hair_color="#4a2a16",
                   torso_front=T.hoodie_front((245, 195, 30), string=(40, 180, 140)), torso_side="#f5c31e",

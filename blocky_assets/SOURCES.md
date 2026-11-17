@@ -62,3 +62,38 @@ Assets: `robot_kid`, `rival_blond`, `ringmaster`, `academy_student_1-3`, robot k
 `emblem_titan_*`, `titan_zero_vanished`, `caption_example_yellow`.
 Style: the captions in this reel are single yellow words with a black outline. Robots use the same joint
 names as the people (`hips`, `arm_L/R`, `leg_L/R` or `wheel`, `neck` → `head`), so they pose the same way.
+
+## 5. Deb41h5RIc6 (74 s, 1080x1920, 30 fps): "my brother hired a hitman" family comedy
+Seen: the hallway of a house (white six-panel doors, a staircase with balusters, a window with brown curtains, wall
+sconces, a dark front door with glass panes, red hardwood floor, side table and lamp); a suited "hitman" in
+sunglasses with a red tie; a little brother with a troll grin; a bald dad in a white shirt and brown tie; a
+screaming older sibling in glasses; a gift card handed over; exaggerated faces (troll grin, scream, glare).
+Assets: `hitman`, `little_brother`, `dad_bald`, `narrator_glasses`, `interior_door`, `front_door`, `staircase`,
+`curtained_window`, `wall_sconce`, `side_table_lamp`, `hardwood_floor`, `gift_card`, `cash_stack`, faces
+`troll_grin`, `screaming`, `glare`, `unimpressed`.
+Captions: plain white lowercase with a black outline, 2–4 words at a time.
+
+## 6. Df1vmwxjNIt (36 s, 1080x1920, 60 fps): "practice phone number" classroom romance
+Seen: a ginger boy in a black slogan tee and heart pyjama pants; a pink-haired friend in a red scarf; a black-haired
+crush in a pink top; a classroom of wooden desks with cream legs; a pink sticky note "practice # 555-0143 text me";
+a phone chat thread over 7 days; "NO PHONES IN CLASS" and "GO TIGERS" signs; a bookshelf; a popcorn bucket; a pink
+chocolate gift box; blushing faces.
+Assets: `ginger_boy`, `pink_hair_friend`, `crush_girl_pink`, `wood_desk`, `smartphone` (chat screen),
+`sticky_note`, `chocolate_box`, `popcorn_bucket`, `sign_no_phones`, `banner_go_tigers`, `bookshelf`, faces
+`blush_shy`, `smirk`, `troll_grin`.
+Captions: white, with the key word in orange (`caption_example_orange`).
+
+## 7. Df0-HgTA3Op (132 s, 1080x1920, 60 fps): "dino-hat kid and his crush" school story
+Seen: a classic yellow-skin kid in a cyan tee with a blue dino hood; a best friend in a chunky striped knit sweater;
+a crush in an academy uniform (crest blazer, plaid skirt, knee socks), later with a ponytail; pale-blue hallway
+lockers and ceiling light panels; a phone photo from a "Class Trip" to a natural history museum with a dino skeleton;
+a classroom with yellow desks; a composition notebook with a flower doodle; a "compliments" list on notebook
+paper; a cafeteria with red tables, round stools and lunch trays; a library with a red wall, bookcases and a round
+table; a "THE NIGHT SKY" poster; a Picture Day / Choir Tryouts bulletin board; a "PICTURE DAY – CLASS OF 2026"
+gym banner; the camera flash; the class photo print; anime-style big-eye faces.
+Assets: `dino_hat_kid`, `sweater_boy`, `uniform_girl`, `ponytail_girl`, `blonde_girl`, `lockers_pale`,
+`ceiling_light`, `school_desk`, `composition_notebook`, `notebook_paper`, `cafeteria_table`, `lunch_tray`,
+`library_table`, `library_bookcase`, `night_sky_poster`, `bulletin_board`, `banner_picture_day`, `camera_tripod`,
+`class_photo`, `dino_skeleton`, `smartphone` (+ `textures/signs/phone_class_trip_photo.png`), faces
+`anime_smile`, `anime_shocked`, `anime_worried`.
+Captions: one word at a time, white with a black outline (CAPS for emphasis).

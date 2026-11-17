@@ -25,6 +25,7 @@ FACE_EXPRESSIONS = [
     "neutral", "smile", "happy", "laugh", "sleepy_blush", "sad", "crying", "scared",
     "shocked", "angry", "worried", "smug", "wink", "unimpressed", "love", "determined",
     "yelling", "nervous_sweat", "dizzy", "sleeping",
+    "troll_grin", "screaming", "smirk", "blush_shy", "anime_smile", "anime_shocked", "anime_worried", "glare",
 ]
 
 
@@ -158,6 +159,54 @@ def face(expr, style="classic", lash=False):
         f = font(150)
         d.text((800, 120), "z", font=f, fill=INK)
         d.text((880, 30), "z", font=font(100), fill=INK)
+    elif expr == "troll_grin":
+        brows("raised")
+        for x in (L, R):
+            d.ellipse([x - 70, ey - 40, x + 70, ey + 40], fill=WHITE, outline=INK, width=12)
+            d.ellipse([x - 22, ey - 22, x + 22, ey + 22], fill=INK)
+        d.chord([cx - 260, mouth_y - 150, cx + 260, mouth_y + 150], 0, 180, fill=INK)
+        for i in range(8):
+            x0 = cx - 230 + i * 58
+            d.rectangle([x0, mouth_y + 4, x0 + 48, mouth_y + 60], fill=WHITE)
+    elif expr == "screaming":
+        brows("worried")
+        for x in (L, R):
+            d.ellipse([x - 95, ey - 95, x + 95, ey + 95], fill=WHITE, outline=INK, width=16)
+            d.ellipse([x - 20, ey - 20, x + 20, ey + 20], fill=INK)
+        d.ellipse([cx - 150, mouth_y - 80, cx + 150, mouth_y + 230], fill=INK)
+        d.rectangle([cx - 110, mouth_y - 60, cx + 110, mouth_y - 20], fill=WHITE)
+    elif expr == "smirk":
+        brows("flat")
+        for x in (L, R):
+            d.chord([x - 75, ey - 50, x + 75, ey + 70], 0, 180, fill=INK)
+        d.arc([cx - 200, mouth_y - 140, cx + 120, mouth_y + 60], 20, 110, fill=INK, width=lw)
+    elif expr == "blush_shy":
+        arc_eye(L, ey + 20, up=True); arc_eye(R, ey + 20, up=True)
+        d.arc([cx - 90, mouth_y - 70, cx + 90, mouth_y + 40], 20, 160, fill=INK, width=lw - 4)
+        for sx in (-1, 1):
+            d.ellipse([cx + sx * 300 - 130, 520, cx + sx * 300 + 130, 640], fill=(255, 90, 120, 200))
+    elif expr.startswith("anime_"):
+        for x in (L, R):
+            d.ellipse([x - 90, ey - 120, x + 90, ey + 110], fill=INK)
+            d.ellipse([x - 50, ey - 90, x - 5, ey - 40], fill=WHITE)
+            d.ellipse([x + 20, ey + 30, x + 45, ey + 55], fill=WHITE)
+        if expr == "anime_smile":
+            d.arc([cx - 110, mouth_y - 80, cx + 110, mouth_y + 60], 20, 160, fill=INK, width=lw - 4)
+            blush()
+        elif expr == "anime_shocked":
+            d.ellipse([cx - 40, mouth_y, cx + 40, mouth_y + 90], fill=(170, 30, 40, 255), outline=INK, width=10)
+            for sx in (-1, 1):
+                d.ellipse([cx + sx * 330 - 50, 580, cx + sx * 330 + 50, 640], fill=(220, 40, 50, 230))
+        else:
+            for sx in (-1, 1):
+                d.line([cx + sx * ex - sx * 100, 280, cx + sx * ex + sx * 60, 250], fill=INK, width=lw)
+            d.arc([cx - 80, mouth_y + 10, cx + 80, mouth_y + 110], 200, 340, fill=INK, width=lw - 4)
+    elif expr == "glare":
+        brows("angry")
+        for x in (L, R):
+            d.ellipse([x - 80, ey - 35, x + 80, ey + 45], fill=WHITE, outline=INK, width=12)
+            d.ellipse([x - 22, ey - 15, x + 22, ey + 30], fill=INK)
+        d.line([cx - 70, mouth_y + 20, cx + 60, mouth_y + 10], fill=INK, width=lw)
     else:
         raise ValueError(expr)
     return im.resize((512, 512), Image.LANCZOS)
@@ -530,12 +579,12 @@ def soft_glow(color=(255, 230, 150), size=256):
     return im
 
 
-def caption_card(word="TOWN", highlight=True, w=1024, h=256, yellow=False):
+def caption_card(word="TOWN", highlight=True, w=1024, h=256, yellow=False, color=None):
     """Example of the bold outlined caption style used in the references."""
     im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     d = ImageDraw.Draw(im)
     f = font(150)
-    fill = (255, 214, 0, 255) if yellow else (60, 230, 60, 255) if highlight else WHITE
+    fill = color + (255,) if color else (255, 214, 0, 255) if yellow else (60, 230, 60, 255) if highlight else WHITE
     d.text((w / 2, h / 2), word, font=f, fill=fill, anchor="mm", stroke_width=10, stroke_fill=(0, 0, 0, 255))
     return im
 
@@ -661,4 +710,250 @@ def moss(size=256):
         r = rnd.randint(2, 7)
         c = rnd.choice([(80, 175, 60), (45, 120, 40), (150, 120, 50), (180, 70, 50), (100, 190, 70)])
         d.ellipse([x - r, y - r, x + r, y + r], fill=c)
+    return im
+
+
+def pixel_face_tee(color=(70, 170, 60), size=256):
+    """Green pixel-noise tee with a yellow pixel smiley badge (original design)."""
+    im = Image.new("RGB", (size, size), color)
+    d = ImageDraw.Draw(im)
+    rnd = random.Random(5)
+    for y in range(0, size, 16):
+        for x in range(0, size, 16):
+            if rnd.random() < 0.25:
+                v = rnd.randint(-25, 25)
+                d.rectangle([x, y, x + 15, y + 15], fill=tuple(max(0, min(255, c + v)) for c in color))
+    k = (255, 230, 60)
+    d.rectangle([60, 50, 196, 186], fill=(30, 30, 30))
+    d.rectangle([72, 62, 184, 174], fill=k)
+    for x0 in (96, 144):
+        d.rectangle([x0, 86, x0 + 16, 110], fill=(30, 30, 30))
+    for x0, y0 in ((88, 130), (104, 146), (120, 146), (136, 146), (152, 130)):
+        d.rectangle([x0, y0, x0 + 16, y0 + 16], fill=(30, 30, 30))
+    return im
+
+
+def text_tee(lines=("REAL MEN", "WEAR", "PINK"), color=(20, 20, 22), fg=(245, 245, 245), size=256):
+    im = Image.new("RGB", (size, size), color)
+    d = ImageDraw.Draw(im)
+    y = 60
+    for i, ln in enumerate(lines):
+        fs = 44
+        f = font(fs)
+        d.text((size / 2, y), ln, font=f, fill=(255, 120, 180) if i == len(lines) - 1 else fg, anchor="mm")
+        y += 54
+    return im
+
+
+def knit_stripes(size=256, seed=6):
+    rnd = random.Random(seed)
+    im = Image.new("RGB", (size, size), (80, 120, 60))
+    d = ImageDraw.Draw(im)
+    pal = [(70, 120, 60), (140, 170, 80), (220, 220, 200), (90, 90, 60), (180, 190, 120), (50, 90, 70)]
+    y = 0
+    while y < size:
+        h = rnd.choice((6, 8, 10, 14))
+        d.rectangle([0, y, size, y + h], fill=rnd.choice(pal))
+        y += h
+    for _ in range(1500):
+        x, yy = rnd.randrange(size), rnd.randrange(size)
+        d.point((x, yy), fill=(255, 255, 255))
+    return im
+
+
+def hearts_pattern(bg=(250, 240, 235), heart=(220, 30, 50), size=256):
+    im = Image.new("RGB", (size, size), bg)
+    d = ImageDraw.Draw(im)
+    for yy in range(16, size, 64):
+        for xx in range(16 + (yy // 64 % 2) * 32, size, 64):
+            d.ellipse([xx, yy, xx + 16, yy + 16], fill=heart)
+            d.ellipse([xx + 12, yy, xx + 28, yy + 16], fill=heart)
+            d.polygon([(xx, yy + 10), (xx + 28, yy + 10), (xx + 14, yy + 28)], fill=heart)
+    return im
+
+
+def crest_blazer(jacket=(25, 25, 28), trim=(240, 240, 240), size=256):
+    im = suit_front(jacket, (245, 245, 245), (90, 90, 95))
+    d = ImageDraw.Draw(im)
+    d.line([(85, 0), (128, 150)], fill=trim, width=5)
+    d.line([(171, 0), (128, 150)], fill=trim, width=5)
+    d.ellipse([170, 80, 220, 130], fill=(200, 30, 40), outline=(240, 200, 60), width=4)
+    d.polygon([(195, 92), (205, 105), (195, 118), (185, 105)], fill=(240, 200, 60))
+    return im
+
+
+def patterned_pants(size=256):
+    rnd = random.Random(8)
+    im = Image.new("RGB", (size, size), (150, 150, 150))
+    d = ImageDraw.Draw(im)
+    for _ in range(400):
+        x, y = rnd.randrange(size), rnd.randrange(size)
+        v = rnd.choice([60, 90, 200, 230])
+        d.rectangle([x, y, x + 6, y + 6], fill=(v, v, v))
+    return im
+
+
+def phone_chat(messages=("hi practice number", "you're the prettiest girl in school", "my brain shuts off whenever you smile",
+                         "goodnight", "she laughed at my joke today"), title="Contact", w=360, h=720):
+    im = Image.new("RGB", (w, h), (245, 240, 236))
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, w, 90], fill=(235, 230, 226))
+    d.ellipse([w / 2 - 22, 12, w / 2 + 22, 56], fill=(220, 90, 70))
+    d.text((w / 2, 72), title, font=font(18), fill=(30, 30, 30), anchor="mm")
+    y = 120
+    for m in messages:
+        f = font(18)
+        lines, cur = [], ""
+        for word in m.split():
+            if d.textlength(cur + " " + word, font=f) > w * 0.6:
+                lines.append(cur); cur = word
+            else:
+                cur = (cur + " " + word).strip()
+        lines.append(cur)
+        bh = 18 + 24 * len(lines)
+        d.rounded_rectangle([20, y, w * 0.72, y + bh], 16, fill=(225, 222, 220))
+        for i, ln in enumerate(lines):
+            d.text((34, y + 10 + i * 24), ln, font=f, fill=(20, 20, 20))
+        y += bh + 22
+    d.rounded_rectangle([16, h - 60, w - 16, h - 20], 20, outline=(200, 200, 200), width=2)
+    return im
+
+
+def sticky_note(lines=("practice #", "555-0143", "text me <3"), size=256):
+    im = Image.new("RGB", (size, size), (255, 200, 220))
+    d = ImageDraw.Draw(im)
+    for i, ln in enumerate(lines):
+        d.text((size / 2, 60 + i * 70), ln, font=font(46 if i == 1 else 32), fill=(40, 30, 40), anchor="mm")
+    return im
+
+
+def composition_cover(size=(384, 512)):
+    w, h = size
+    rnd = random.Random(13)
+    im = Image.new("RGB", size, (240, 240, 240))
+    d = ImageDraw.Draw(im)
+    for _ in range(2500):
+        x, y = rnd.randrange(w), rnd.randrange(h)
+        r = rnd.randint(2, 7)
+        d.ellipse([x, y, x + r, y + r * 0.6], fill=(15, 15, 15))
+    d.rectangle([60, 70, w - 60, 200], fill=(250, 250, 250), outline=(20, 20, 20), width=3)
+    d.text((w / 2, 100), "COMPOSITION", font=font(30), fill=(20, 20, 20), anchor="mm")
+    for yy in (140, 165, 190):
+        d.line([(80, yy), (w - 80, yy)], fill=(120, 120, 120), width=2)
+    cx, cy = w / 2, 330
+    for a in range(0, 360, 60):
+        import math as _m
+        d.ellipse([cx + 40 * _m.cos(_m.radians(a)) - 30, cy + 40 * _m.sin(_m.radians(a)) - 30,
+                   cx + 40 * _m.cos(_m.radians(a)) + 30, cy + 40 * _m.sin(_m.radians(a)) + 30], fill=(240, 80, 150))
+    d.ellipse([cx - 22, cy - 22, cx + 22, cy + 22], fill=(250, 220, 60))
+    d.line([(cx, cy + 40), (cx - 10, h - 40)], fill=(60, 180, 60), width=10)
+    return im
+
+
+def lined_paper(lines=("compliments from me:", "1. pretty", "2. nice", "3. funny"), size=(384, 512)):
+    w, h = size
+    im = Image.new("RGB", size, (252, 252, 248))
+    d = ImageDraw.Draw(im)
+    for y in range(60, h, 32):
+        d.line([(0, y), (w, y)], fill=(170, 200, 235), width=2)
+    d.line([(50, 0), (50, h)], fill=(235, 140, 140), width=2)
+    for i, ln in enumerate(lines):
+        d.text((60, 36 + i * 32), ln, font=font(22), fill=(40, 60, 170))
+    return im
+
+
+def night_sky_poster(size=(384, 512)):
+    w, h = size
+    im = Image.new("RGB", size, (20, 30, 70))
+    d = ImageDraw.Draw(im)
+    d.text((w / 2, 60), "THE NIGHT SKY", font=font(40), fill=(250, 210, 80), anchor="mm")
+    d.arc([60, 180, 220, 400], 90, 270, fill=(240, 240, 240), width=24)
+    d.ellipse([200, 220, 300, 320], fill=(240, 150, 60))
+    d.rounded_rectangle([250, 160, 300, 260], 25, fill=(90, 170, 240))
+    return im
+
+
+def banner_picture_day(w=1024, h=256):
+    im = Image.new("RGB", (w, h), (30, 60, 170))
+    d = ImageDraw.Draw(im)
+    d.text((w / 2, 95), "PICTURE DAY", font=font(110), fill=(255, 255, 255), anchor="mm")
+    d.text((w / 2, 195), "CLASS OF 2026", font=font(56), fill=(250, 210, 60), anchor="mm")
+    return im
+
+
+def bulletin_board(w=768, h=512):
+    im = Image.new("RGB", (w, h), (200, 150, 95))
+    d = ImageDraw.Draw(im)
+    rnd = random.Random(3)
+    for _ in range(800):
+        x, y = rnd.randrange(w), rnd.randrange(h)
+        d.point((x, y), fill=(170, 120, 70))
+    d.rectangle([40, 40, 420, 470], fill=(255, 255, 255))
+    d.text((230, 140), "PICTURE", font=font(64), fill=(220, 60, 60), anchor="mm")
+    d.text((230, 230), "DAY", font=font(90), fill=(220, 60, 60), anchor="mm")
+    d.text((230, 330), "THIS FRIDAY", font=font(36), fill=(40, 40, 40), anchor="mm")
+    d.text((230, 390), "SMILE!", font=font(36), fill=(240, 160, 40), anchor="mm")
+    d.rectangle([460, 60, 730, 300], fill=(255, 255, 255))
+    d.text((595, 150), "CHOIR", font=font(52), fill=(190, 70, 190), anchor="mm")
+    d.text((595, 220), "TRYOUTS", font=font(38), fill=(190, 70, 190), anchor="mm")
+    d.rectangle([480, 330, 700, 470], fill=(255, 240, 120))
+    for i in range(4):
+        d.line([(500, 360 + i * 28), (680, 360 + i * 28)], fill=(90, 90, 90), width=4)
+    return im
+
+
+def book_spines(w=512, h=256, seed=1):
+    rnd = random.Random(seed)
+    im = Image.new("RGB", (w, h), (90, 55, 30))
+    d = ImageDraw.Draw(im)
+    pal = [(180, 40, 40), (40, 90, 170), (230, 190, 60), (40, 130, 80), (120, 60, 150), (230, 120, 40), (30, 30, 30)]
+    for shelf in range(2):
+        y0 = shelf * h // 2 + 8
+        x = 6
+        while x < w - 10:
+            bw = rnd.randint(12, 26)
+            bh = rnd.randint(int(h * 0.3), int(h * 0.44))
+            d.rectangle([x, y0 + (h // 2 - 14 - bh), x + bw, y0 + h // 2 - 14], fill=rnd.choice(pal))
+            x += bw + 2
+    return im
+
+
+def photo_print(w=384, h=288):
+    im = Image.new("RGB", (w, h), (255, 255, 255))
+    d = ImageDraw.Draw(im)
+    d.rectangle([14, 14, w - 14, h - 50], fill=(60, 90, 180))
+    rnd = random.Random(4)
+    for i in range(9):
+        x = 30 + i * 37
+        c = rnd.choice([(220, 60, 60), (250, 220, 60), (60, 200, 220), (40, 40, 40), (160, 80, 200)])
+        d.rectangle([x, 120, x + 26, 220], fill=c)
+        d.rectangle([x + 3, 92, x + 23, 118], fill=(245, 205, 160))
+    d.text((w / 2, h - 28), "CLASS OF 2026", font=font(22), fill=(30, 30, 30), anchor="mm")
+    return im
+
+
+def museum_photo(w=360, h=640):
+    im = Image.new("RGB", (w, h), (245, 240, 230))
+    d = ImageDraw.Draw(im)
+    d.rectangle([0, 0, w, 120], fill=(0, 0, 0))
+    d.text((w / 2, 70), "Class Trip", font=font(24), fill=(255, 255, 255), anchor="mm")
+    d.rectangle([20, 160, w - 20, 220], fill=(170, 30, 40))
+    d.text((w / 2, 190), "NATURAL HISTORY MUSEUM", font=font(20), fill=(255, 230, 200), anchor="mm")
+    bone = (210, 180, 150)
+    d.line([(60, 330), (300, 300)], fill=bone, width=14)
+    for i in range(7):
+        d.line([(100 + i * 28, 320 - i * 3), (100 + i * 28, 380 - i * 3)], fill=bone, width=6)
+    d.line([(300, 300), (340, 260)], fill=bone, width=10)
+    d.ellipse([320, 240, 360, 280], fill=bone)
+    d.rectangle([0, 520, w, h], fill=(160, 30, 40))
+    return im
+
+
+def cash_bills(w=256, h=128):
+    im = Image.new("RGB", (w, h), (140, 200, 140))
+    d = ImageDraw.Draw(im)
+    d.rectangle([6, 6, w - 7, h - 7], outline=(40, 110, 50), width=6)
+    d.ellipse([w / 2 - 34, h / 2 - 34, w / 2 + 34, h / 2 + 34], outline=(40, 110, 50), width=6)
+    d.text((w / 2, h / 2), "$", font=font(52), fill=(40, 110, 50), anchor="mm")
+    d.text((30, 30), "100", font=font(20), fill=(40, 110, 50), anchor="mm")
     return im

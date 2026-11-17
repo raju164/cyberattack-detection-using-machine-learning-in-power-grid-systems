@@ -572,6 +572,366 @@
    ]
   },
   {
+   "id": "hitman",
+   "file": "models/characters/hitman.glb",
+   "default_face": "glare",
+   "notes": "Hired 'hitman': slick hair, sunglasses, black suit, red tie",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.23200000822544098
+    ],
+    [
+     0.494999997317791,
+     1.5398896753787994,
+     0.22600001096725464
+    ]
+   ],
+   "bytes": 43572,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "little_brother",
+   "file": "models/characters/little_brother.glb",
+   "default_face": "troll_grin",
+   "notes": "Cheeky little brother: blond spikes, green pixel-smiley tee",
+   "bounds": [
+    [
+     -0.39599999785423284,
+     0.0,
+     -0.16959999799728395
+    ],
+    [
+     0.39599999785423284,
+     1.3115738010406495,
+     0.17920000553131105
+    ]
+   ],
+   "bytes": 43544,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "dad_bald",
+   "file": "models/characters/dad_bald.glb",
+   "default_face": "unimpressed",
+   "notes": "Dad: bald with side tufts, white shirt, brown tie",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2199999988079071
+    ],
+    [
+     0.494999997317791,
+     1.4000000029802322,
+     0.203
+    ]
+   ],
+   "bytes": 29152,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "narrator_glasses",
+   "file": "models/characters/narrator_glasses.glb",
+   "default_face": "screaming",
+   "notes": "Panicking older sibling: glasses, black jacket over blue tee",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2199999988079071
+    ],
+    [
+     0.494999997317791,
+     1.4000000029802322,
+     0.22349999845027924
+    ]
+   ],
+   "bytes": 50564,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "ginger_boy",
+   "file": "models/characters/ginger_boy.glb",
+   "default_face": "troll_grin",
+   "notes": "Lovesick ginger: 'REAL MEN WEAR PINK' tee, heart pajama pants",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.23200000822544098
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 49480,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "pink_hair_friend",
+   "file": "models/characters/pink_hair_friend.glb",
+   "default_face": "smirk",
+   "notes": "Wingman: pink spiky hair, red scarf, dark jacket",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.21199999749660492
+    ],
+    [
+     0.494999997317791,
+     1.6394672513008117,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 39460,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "crush_girl_pink",
+   "file": "models/characters/crush_girl_pink.glb",
+   "default_face": "blush_shy",
+   "notes": "Crush: long black hair, pink top",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 40120,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "dino_hat_kid",
+   "file": "models/characters/dino_hat_kid.glb",
+   "default_face": "anime_worried",
+   "notes": "Classic yellow-skin kid: cyan tee, black pants, blue dino hood with yellow spikes",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2875017523765564
+    ],
+    [
+     0.494999997317791,
+     1.6401403367519378,
+     0.25349998474121094
+    ]
+   ],
+   "bytes": 56404,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "sweater_boy",
+   "file": "models/characters/sweater_boy.glb",
+   "default_face": "shocked",
+   "notes": "Best friend: chunky striped knit sweater",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.23200000822544098
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 65744,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "uniform_girl",
+   "file": "models/characters/uniform_girl.glb",
+   "default_face": "anime_smile",
+   "notes": "Crush in academy uniform: crest blazer, plaid skirt, knee socks",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 48676,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "ponytail_girl",
+   "file": "models/characters/ponytail_girl.glb",
+   "default_face": "anime_shocked",
+   "notes": "Same uniform, ponytail (the 'new haircut' look)",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.3594430088996887
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 46840,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "blonde_girl",
+   "file": "models/characters/blonde_girl.glb",
+   "default_face": "happy",
+   "notes": "Blonde classmate, pink sweater",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 58720,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
    "id": "robot_kid",
    "file": "models/characters/robot_kid.glb",
    "default_face": "worried",
@@ -2555,6 +2915,595 @@
     ]
    ],
    "bytes": 10924
+  },
+  {
+   "id": "interior_door",
+   "category": "interior",
+   "file": "models/props/interior/interior_door.glb",
+   "notes": "White six-panel interior door with frame and knob (pivot node 'door' at hinge)",
+   "bounds": [
+    [
+     -0.550000011920929,
+     0.0,
+     -0.07999999821186066
+    ],
+    [
+     0.550000011920929,
+     2.25,
+     0.09999999403953552
+    ]
+   ],
+   "bytes": 16036
+  },
+  {
+   "id": "front_door",
+   "category": "interior",
+   "file": "models/props/interior/front_door.glb",
+   "notes": "Front door with tall glass side-panes (dark grey, letter slot)",
+   "bounds": [
+    [
+     -0.6000000238418579,
+     0.0,
+     -0.05999999865889549
+    ],
+    [
+     0.6000000238418579,
+     2.299999952316284,
+     0.0949999988079071
+    ]
+   ],
+   "bytes": 10176
+  },
+  {
+   "id": "staircase",
+   "category": "interior",
+   "file": "models/props/interior/staircase.glb",
+   "notes": "Straight staircase with white balusters and wood rail (rises along -Z)",
+   "bounds": [
+    [
+     -0.550000011920929,
+     0.0,
+     -3.662264823913574
+    ],
+    [
+     0.5799999833106995,
+     3.5645341873168945,
+     0.1850000023841858
+    ]
+   ],
+   "bytes": 45836
+  },
+  {
+   "id": "curtained_window",
+   "category": "interior",
+   "file": "models/props/interior/curtained_window.glb",
+   "notes": "Tall window with tied-back brown curtains and rod",
+   "bounds": [
+    [
+     -1.100000023841858,
+     0.10000002384185791,
+     -0.029999999329447746
+    ],
+    [
+     1.100000023841858,
+     2.740000009536743,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 12044
+  },
+  {
+   "id": "wall_sconce",
+   "category": "interior",
+   "file": "models/props/interior/wall_sconce.glb",
+   "notes": "Wall sconce lamp (brass arm, glowing shade)",
+   "bounds": [
+    [
+     -0.08969336748123169,
+     -0.09000000357627869,
+     -0.014999999664723873
+    ],
+    [
+     0.08969336748123169,
+     0.22999998927116394,
+     0.1899999976158142
+    ]
+   ],
+   "bytes": 10856
+  },
+  {
+   "id": "side_table_lamp",
+   "category": "interior",
+   "file": "models/props/interior/side_table_lamp.glb",
+   "notes": "Side table with green table lamp",
+   "bounds": [
+    [
+     -0.44999998807907104,
+     0.0,
+     -0.22499999403953552
+    ],
+    [
+     0.44999998807907104,
+     1.2100000381469727,
+     0.22499999403953552
+    ]
+   ],
+   "bytes": 12312
+  },
+  {
+   "id": "hardwood_floor",
+   "category": "interior",
+   "file": "models/props/interior/hardwood_floor.glb",
+   "notes": "Hardwood floor tile 6x6 m",
+   "bounds": [
+    [
+     -3.0,
+     0.02500000037252903,
+     -3.0
+    ],
+    [
+     3.0,
+     0.02500000037252903,
+     3.0
+    ]
+   ],
+   "bytes": 4696
+  },
+  {
+   "id": "gift_card",
+   "category": "interior",
+   "file": "models/props/interior/gift_card.glb",
+   "notes": "Gift card / payment card (gold)",
+   "bounds": [
+    [
+     -0.04500000178813934,
+     0.002499999478459358,
+     -0.0020000000949949026
+    ],
+    [
+     0.04500000178813934,
+     0.057499997317790985,
+     0.003000000026077032
+    ]
+   ],
+   "bytes": 3916
+  },
+  {
+   "id": "cash_stack",
+   "category": "interior",
+   "file": "models/props/interior/cash_stack.glb",
+   "notes": "Stack of cash bills",
+   "bounds": [
+    [
+     -0.08224659413099289,
+     0.0,
+     -0.040495261549949646
+    ],
+    [
+     0.08224659413099289,
+     0.05999999865889549,
+     0.040495261549949646
+    ]
+   ],
+   "bytes": 11380
+  },
+  {
+   "id": "wood_desk",
+   "category": "classroom",
+   "file": "models/props/classroom/wood_desk.glb",
+   "notes": "Wooden student desk + chair (cream metal legs)",
+   "bounds": [
+    [
+     -0.375,
+     -0.004999995231628418,
+     -0.25
+    ],
+    [
+     0.375,
+     0.8950000405311584,
+     0.7799999713897705
+    ]
+   ],
+   "bytes": 16672
+  },
+  {
+   "id": "smartphone",
+   "category": "classroom",
+   "file": "models/props/classroom/smartphone.glb",
+   "notes": "Smartphone (screen node 'screen' - swap textures/signs/phone_*.png)",
+   "bounds": [
+    [
+     -0.03750000149011612,
+     0.0,
+     -0.0044999998062849045
+    ],
+    [
+     0.03750000149011612,
+     0.1550000011920929,
+     0.0047
+    ]
+   ],
+   "bytes": 23256
+  },
+  {
+   "id": "sticky_note",
+   "category": "classroom",
+   "file": "models/props/classroom/sticky_note.glb",
+   "notes": "Pink sticky note 'practice # 555-0143 text me'",
+   "bounds": [
+    [
+     -0.05000000074505806,
+     0.0,
+     -0.0010000000474974513
+    ],
+    [
+     0.05000000074505806,
+     0.10000000149011612,
+     0.0012000000569969416
+    ]
+   ],
+   "bytes": 12520
+  },
+  {
+   "id": "chocolate_box",
+   "category": "classroom",
+   "file": "models/props/classroom/chocolate_box.glb",
+   "notes": "Pink chocolate gift box with yellow ribbon",
+   "bounds": [
+    [
+     -0.1550000011920929,
+     -0.000999998301267624,
+     -0.11500000208616257
+    ],
+    [
+     0.1550000011920929,
+     0.1550000011920929,
+     0.11500000208616257
+    ]
+   ],
+   "bytes": 14068
+  },
+  {
+   "id": "popcorn_bucket",
+   "category": "classroom",
+   "file": "models/props/classroom/popcorn_bucket.glb",
+   "notes": "Striped popcorn bucket",
+   "bounds": [
+    [
+     -0.09000000357627869,
+     0.0,
+     -0.09000000357627869
+    ],
+    [
+     0.09000000357627869,
+     0.24500000476837158,
+     0.09000000357627869
+    ]
+   ],
+   "bytes": 22328
+  },
+  {
+   "id": "sign_no_phones",
+   "category": "classroom",
+   "file": "models/props/classroom/sign_no_phones.glb",
+   "notes": "'NO PHONES IN CLASS' wall sign",
+   "bounds": [
+    [
+     -0.30000001192092896,
+     0.0,
+     0.0
+    ],
+    [
+     0.30000001192092896,
+     0.4000000059604645,
+     0.0
+    ]
+   ],
+   "bytes": 11360
+  },
+  {
+   "id": "banner_go_tigers",
+   "category": "classroom",
+   "file": "models/props/classroom/banner_go_tigers.glb",
+   "notes": "'GO TIGERS' pennant banner",
+   "bounds": [
+    [
+     -0.800000011920929,
+     0.0,
+     0.0
+    ],
+    [
+     0.800000011920929,
+     0.4000000059604645,
+     0.0
+    ]
+   ],
+   "bytes": 10976
+  },
+  {
+   "id": "bookshelf",
+   "category": "classroom",
+   "file": "models/props/classroom/bookshelf.glb",
+   "notes": "Cubby bookshelf with colourful books",
+   "bounds": [
+    [
+     -0.8999999761581421,
+     0.0,
+     -0.2199999988079071
+    ],
+    [
+     0.8999999761581421,
+     2.0,
+     0.1809999942779541
+    ]
+   ],
+   "bytes": 8320
+  },
+  {
+   "id": "lockers_pale",
+   "category": "school",
+   "file": "models/props/school/lockers_pale.glb",
+   "notes": "Row of 6 pale-blue hallway lockers",
+   "bounds": [
+    [
+     -1.25,
+     0.0,
+     -0.22499999403953552
+    ],
+    [
+     1.25,
+     1.899999976158142,
+     0.23499999940395355
+    ]
+   ],
+   "bytes": 29428
+  },
+  {
+   "id": "ceiling_light",
+   "category": "school",
+   "file": "models/props/school/ceiling_light.glb",
+   "notes": "Ceiling light panel (emissive)",
+   "bounds": [
+    [
+     -0.6000000238418579,
+     -0.02500000037252903,
+     -0.30000001192092896
+    ],
+    [
+     0.6000000238418579,
+     0.02500000037252903,
+     0.30000001192092896
+    ]
+   ],
+   "bytes": 2224
+  },
+  {
+   "id": "cafeteria_table",
+   "category": "school",
+   "file": "models/props/school/cafeteria_table.glb",
+   "notes": "Cafeteria folding table with 6 round stools",
+   "bounds": [
+    [
+     -1.5,
+     0.0,
+     -0.8299999833106995
+    ],
+    [
+     1.5,
+     0.7849999666213989,
+     0.8299999833106995
+    ]
+   ],
+   "bytes": 36712
+  },
+  {
+   "id": "lunch_tray",
+   "category": "school",
+   "file": "models/props/school/lunch_tray.glb",
+   "notes": "Lunch tray with burger, fries, milkshake, ketchup + mustard",
+   "bounds": [
+    [
+     -0.22499999403953552,
+     0.0,
+     -0.1599999964237213
+    ],
+    [
+     0.22499999403953552,
+     0.1899999976158142,
+     0.1599999964237213
+    ]
+   ],
+   "bytes": 38604
+  },
+  {
+   "id": "library_table",
+   "category": "school",
+   "file": "models/props/school/library_table.glb",
+   "notes": "Round wooden library table with 4 chairs",
+   "bounds": [
+    [
+     -1.0465180306770003,
+     -0.004999995231628418,
+     -1.0465180306770003
+    ],
+    [
+     1.046518030677,
+     0.9700000286102295,
+     1.046518030677
+    ]
+   ],
+   "bytes": 39796
+  },
+  {
+   "id": "library_bookcase",
+   "category": "school",
+   "file": "models/props/school/library_bookcase.glb",
+   "notes": "Tall library bookcase (red wall style)",
+   "bounds": [
+    [
+     -1.0,
+     0.0,
+     -0.2199999988079071
+    ],
+    [
+     1.0,
+     2.5999999046325684,
+     0.1809999942779541
+    ]
+   ],
+   "bytes": 10964
+  },
+  {
+   "id": "composition_notebook",
+   "category": "school",
+   "file": "models/props/school/composition_notebook.glb",
+   "notes": "Composition notebook with flower doodle (open-able: node 'cover')",
+   "bounds": [
+    [
+     -0.095,
+     0.0020000003278255463,
+     -0.125
+    ],
+    [
+     0.0949999988079071,
+     0.018499999944120646,
+     0.125
+    ]
+   ],
+   "bytes": 25844
+  },
+  {
+   "id": "notebook_paper",
+   "category": "school",
+   "file": "models/props/school/notebook_paper.glb",
+   "notes": "Sheet of lined notebook paper ('compliments' list)",
+   "bounds": [
+    [
+     -0.10499999672174454,
+     0.0010000000474974513,
+     -0.14000000059604645
+    ],
+    [
+     0.10499999672174454,
+     0.0010000000474974513,
+     0.14000000059604645
+    ]
+   ],
+   "bytes": 11312
+  },
+  {
+   "id": "night_sky_poster",
+   "category": "school",
+   "file": "models/props/school/night_sky_poster.glb",
+   "notes": "'THE NIGHT SKY' poster (lay on table or hang)",
+   "bounds": [
+    [
+     -0.22499999403953552,
+     0.0,
+     0.0
+    ],
+    [
+     0.22499999403953552,
+     0.6000000238418579,
+     0.0
+    ]
+   ],
+   "bytes": 8272
+  },
+  {
+   "id": "banner_picture_day",
+   "category": "school",
+   "file": "models/props/school/banner_picture_day.glb",
+   "notes": "'PICTURE DAY - CLASS OF 2026' gym banner",
+   "bounds": [
+    [
+     -2.0,
+     0.0,
+     0.0
+    ],
+    [
+     2.0,
+     1.0,
+     0.0
+    ]
+   ],
+   "bytes": 22112
+  },
+  {
+   "id": "bulletin_board",
+   "category": "school",
+   "file": "models/props/school/bulletin_board.glb",
+   "notes": "Cork bulletin board (Picture Day / Choir Tryouts)",
+   "bounds": [
+    [
+     -0.800000011920929,
+     0.0,
+     -0.019999999552965164
+    ],
+    [
+     0.800000011920929,
+     1.100000023841858,
+     0.020999999716877937
+    ]
+   ],
+   "bytes": 26848
+  },
+  {
+   "id": "camera_tripod",
+   "category": "school",
+   "file": "models/props/school/camera_tripod.glb",
+   "notes": "Photographer's camera on tripod with flash",
+   "bounds": [
+    [
+     -0.2811545729637146,
+     -0.023182392120361328,
+     -0.17012932896614075
+    ],
+    [
+     0.2811545729637146,
+     1.5099999904632568,
+     0.3247523009777069
+    ]
+   ],
+   "bytes": 11384
+  },
+  {
+   "id": "class_photo",
+   "category": "school",
+   "file": "models/props/school/class_photo.glb",
+   "notes": "Class photo print (handheld)",
+   "bounds": [
+    [
+     -0.10000000149011612,
+     0.0,
+     0.0
+    ],
+    [
+     0.10000000149011612,
+     0.15000000596046448,
+     0.0
+    ]
+   ],
+   "bytes": 5888
+  },
+  {
+   "id": "dino_skeleton",
+   "category": "school",
+   "file": "models/props/school/dino_skeleton.glb",
+   "notes": "Museum dinosaur skeleton (bone-colour, low poly)",
+   "bounds": [
+    [
+     -2.2175559997558594,
+     0.0,
+     -1.0
+    ],
+    [
+     2.5714895725250244,
+     3.199815511703491,
+     1.0
+    ]
+   ],
+   "bytes": 30912
   }
  ],
  "textures": {
@@ -2578,19 +3527,32 @@
    "yelling",
    "nervous_sweat",
    "dizzy",
-   "sleeping"
+   "sleeping",
+   "troll_grin",
+   "screaming",
+   "smirk",
+   "blush_shy",
+   "anime_smile",
+   "anime_shocked",
+   "anime_worried",
+   "glare"
   ],
   "outfits": [
    "academy_tee_blue",
    "button_shirt_orange",
+   "crest_blazer",
    "dress_pink",
+   "hearts_pattern",
    "hoodie_green",
    "hoodie_red",
    "hoodie_yellow",
    "hoodie_yellow_green_strings",
    "jersey_blue_10",
+   "knit_stripes",
    "overalls",
    "pajama_pink",
+   "patterned_pants_grey",
+   "pixel_smiley_tee_green",
    "plaid_grey",
    "plaid_red",
    "school_uniform_black",
@@ -2599,9 +3561,12 @@
    "stripes_red_white",
    "suit_black",
    "suit_gold_sequin_bowtie",
+   "text_tee_real_men_wear_pink",
    "varsity_red_white"
   ],
   "signs": [
+   "banner_picture_day",
+   "bulletin_board",
    "cafeteria",
    "calendar_day_01",
    "calendar_day_02",
@@ -2641,19 +3606,29 @@
    "calendar_tue",
    "calendar_wed",
    "caption_example_green",
+   "caption_example_orange",
    "caption_example_white",
    "caption_example_yellow",
+   "cash_bill",
    "chalkboard_history_of_dust",
+   "class_photo",
+   "composition_cover",
    "costume_contest",
    "ecg_screen",
    "emblem_titan_cyan",
    "emblem_titan_gold",
    "emblem_titan_red",
+   "go_tigers",
    "hall_of_fame_titan_zero",
+   "lined_paper_compliments",
    "mood_dial_face",
    "neon_no_robot_found",
    "newspaper_blank",
    "newspaper_front",
+   "night_sky_poster",
+   "no_phones_in_class",
+   "phone_chat_practice_number",
+   "phone_class_trip_photo",
    "poster_starlight_princess",
    "power_plant",
    "ranking_board",
@@ -2664,14 +3639,17 @@
    "sign_robot_academy",
    "speech_blank",
    "speech_good_morning",
+   "sticky_note_practice",
    "titan_zero_vanished",
    "town_rule_example"
   ],
   "surfaces": [
+   "bookshelf_spines",
    "brick_dark",
    "brick_red",
    "cobble",
    "grass",
+   "hardwood_red",
    "moss",
    "road",
    "siding_navy",
