@@ -1,0 +1,1838 @@
+{
+ "units": "metres, +Y up, models face +Z, base at y=0",
+ "characters": [
+  {
+   "id": "stripe_kid",
+   "file": "models/characters/stripe_kid.glb",
+   "default_face": "smile",
+   "notes": "Recurring hero: spiky green hair, green/black striped tee, black pants",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.21199999749660492
+    ],
+    [
+     0.494999997317791,
+     1.6394672513008117,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 38632,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "goth_girl",
+   "file": "models/characters/goth_girl.glb",
+   "default_face": "smug",
+   "notes": "Love interest: long black hair, black blazer, plaid skirt, white socks",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 40984,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "brunette_girl",
+   "file": "models/characters/brunette_girl.glb",
+   "default_face": "happy",
+   "notes": "Brown-haired classmate, brown blazer, dark skirt",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 52988,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "mayor",
+   "file": "models/characters/mayor.glb",
+   "default_face": "yelling",
+   "notes": "Town mayor: suit, side-part hair, mustache",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2329999953508377
+    ]
+   ],
+   "bytes": 44164,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "businessman",
+   "file": "models/characters/businessman.glb",
+   "default_face": "smile",
+   "notes": "Ginger guy in suit with backpack",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.3125
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 42536,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "hoodie_boy",
+   "file": "models/characters/hoodie_boy.glb",
+   "default_face": "shocked",
+   "notes": "Hero of the 'sun' reel: yellow hoodie, blue jeans, brown hair",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.23200000822544098
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 45372,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "old_man",
+   "file": "models/characters/old_man.glb",
+   "default_face": "sleepy_blush",
+   "notes": "Bald grandpa, orange button shirt, round glasses",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.494999997317791,
+     1.4000000029802322,
+     0.22349999845027924
+    ]
+   ],
+   "bytes": 38644,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "pajama_girl",
+   "file": "models/characters/pajama_girl.glb",
+   "default_face": "laugh",
+   "notes": "Little sister: red curly pigtails, pink pajamas",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 66616,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "farmer",
+   "file": "models/characters/farmer.glb",
+   "default_face": "neutral",
+   "notes": "Mushroom farmer: straw hat, overalls",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.4037500023841858
+    ],
+    [
+     0.494999997317791,
+     1.5499999940395355,
+     0.4037500023841858
+    ]
+   ],
+   "bytes": 38824,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "show_host",
+   "file": "models/characters/show_host.glb",
+   "default_face": "happy",
+   "notes": "Contest host: gold sequin tux, bow tie",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2279999852180481
+    ]
+   ],
+   "bytes": 50064,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "athlete",
+   "file": "models/characters/athlete.glb",
+   "default_face": "determined",
+   "notes": "Gym / sports kid: blue #10 jersey, red shorts",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.20600000023841858
+    ],
+    [
+     0.494999997317791,
+     1.4119999974966049,
+     0.20600000023841858
+    ]
+   ],
+   "bytes": 35652,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "princess_costume",
+   "file": "models/characters/princess_costume.glb",
+   "default_face": "love",
+   "notes": "Costume-contest look: pink frilly dress, tiara, angel wings",
+   "bounds": [
+    [
+     -0.5142771005630493,
+     0.0,
+     -0.25
+    ],
+    [
+     0.5142771005630493,
+     1.5240000009536743,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 59676,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "kid_green",
+   "file": "models/characters/kid_green.glb",
+   "default_face": "smile",
+   "notes": "Small kid, green hoodie (reading a picture book)",
+   "bounds": [
+    [
+     -0.42074999772012234,
+     0.0,
+     -0.1938000001013279
+    ],
+    [
+     0.42074999772012234,
+     1.2376000103354454,
+     0.19379998743534088
+    ]
+   ],
+   "bytes": 34108,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "townsfolk_1",
+   "file": "models/characters/townsfolk_1.glb",
+   "default_face": "smile",
+   "notes": "Background crowd / townsperson",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.23200000822544098
+    ],
+    [
+     0.494999997317791,
+     1.4520000040531158,
+     0.2240000069141388
+    ]
+   ],
+   "bytes": 34572,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "townsfolk_2",
+   "file": "models/characters/townsfolk_2.glb",
+   "default_face": "neutral",
+   "notes": "Background crowd / townsperson",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.5989999890327453,
+     0.21199999749660492
+    ]
+   ],
+   "bytes": 31448,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "townsfolk_3",
+   "file": "models/characters/townsfolk_3.glb",
+   "default_face": "happy",
+   "notes": "Background crowd / townsperson",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 32484,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "townsfolk_4",
+   "file": "models/characters/townsfolk_4.glb",
+   "default_face": "worried",
+   "notes": "Background crowd / townsperson",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.20600000023841858
+    ],
+    [
+     0.494999997317791,
+     1.4119999974966049,
+     0.20600000023841858
+    ]
+   ],
+   "bytes": 28368,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "townsfolk_5",
+   "file": "models/characters/townsfolk_5.glb",
+   "default_face": "smug",
+   "notes": "Background crowd / townsperson",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.2280000001192093
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2279999852180481
+    ]
+   ],
+   "bytes": 29508,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "townsfolk_6",
+   "file": "models/characters/townsfolk_6.glb",
+   "default_face": "laugh",
+   "notes": "Background crowd / townsperson",
+   "bounds": [
+    [
+     -0.494999997317791,
+     0.0,
+     -0.25
+    ],
+    [
+     0.494999997317791,
+     1.4560000121593475,
+     0.2280000001192093
+    ]
+   ],
+   "bytes": 59644,
+   "rig_nodes": [
+    "hips",
+    "torso",
+    "leg_L",
+    "leg_R",
+    "arm_L",
+    "arm_R",
+    "neck",
+    "head",
+    "face"
+   ]
+  },
+  {
+   "id": "chicken",
+   "file": "models/characters/chicken.glb",
+   "notes": "Blocky white chicken (the 'good morning' rooster)",
+   "bounds": [
+    [
+     -0.20000000298023224,
+     0.0,
+     -0.3296410143375397
+    ],
+    [
+     0.20000000298023224,
+     0.9100000262260437,
+     0.3400000035762787
+    ]
+   ]
+  }
+ ],
+ "props": [
+  {
+   "id": "sewing_machine",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/sewing_machine.glb",
+   "notes": "White sewing machine",
+   "bounds": [
+    [
+     -0.25,
+     0.0,
+     -0.11999999731779099
+    ],
+    [
+     0.2749999761581421,
+     0.4650000035762787,
+     0.11999999731779099
+    ]
+   ],
+   "bytes": 14644
+  },
+  {
+   "id": "sewing_table",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/sewing_table.glb",
+   "notes": "Antique treadle sewing table (wood + cast-iron legs)",
+   "bounds": [
+    [
+     -0.5,
+     0.009999990463256836,
+     -0.25
+    ],
+    [
+     0.5,
+     0.809999942779541,
+     0.25
+    ]
+   ],
+   "bytes": 25204
+  },
+  {
+   "id": "mannequin",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/mannequin.glb",
+   "notes": "Dress-form mannequin",
+   "bounds": [
+    [
+     -0.20000000298023224,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.20000000298023224,
+     1.5699999332427979,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 18152
+  },
+  {
+   "id": "doll_pink_dress",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/doll_pink_dress.glb",
+   "notes": "Small doll in a pink ball gown",
+   "bounds": [
+    [
+     -0.10999999940395355,
+     0.0,
+     -0.10999999940395355
+    ],
+    [
+     0.10999999940395355,
+     0.33000001311302185,
+     0.10999999940395355
+    ]
+   ],
+   "bytes": 11560
+  },
+  {
+   "id": "tape_measure",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/tape_measure.glb",
+   "notes": "Yellow measuring tape (extended)",
+   "bounds": [
+    [
+     -0.03999999910593033,
+     0.0,
+     -0.019999999552965164
+    ],
+    [
+     0.6399999856948853,
+     0.07999999821186066,
+     0.019999999552965164
+    ]
+   ],
+   "bytes": 3884
+  },
+  {
+   "id": "bandage_box",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/bandage_box.glb",
+   "notes": "Blue first-aid / bandage box",
+   "bounds": [
+    [
+     -0.125,
+     0.0,
+     -0.07999999821186066
+    ],
+    [
+     0.125,
+     0.11999999731779099,
+     0.08349999785423279
+    ]
+   ],
+   "bytes": 4736
+  },
+  {
+   "id": "fabric_roll",
+   "category": "sewing_room",
+   "file": "models/props/sewing_room/fabric_roll.glb",
+   "notes": "Fabric roll",
+   "bounds": [
+    [
+     -0.4000000059604645,
+     0.001755043864250183,
+     -0.2199999988079071
+    ],
+    [
+     0.4000000059604645,
+     0.13824495673179626,
+     0.2199999988079071
+    ]
+   ],
+   "bytes": 10920
+  },
+  {
+   "id": "lockers",
+   "category": "school",
+   "file": "models/props/school/lockers.glb",
+   "notes": "Row of 4 school lockers",
+   "bounds": [
+    [
+     -0.8299999833106995,
+     0.0,
+     -0.22499999403953552
+    ],
+    [
+     0.8299999833106995,
+     1.7999999523162842,
+     0.23499999940395355
+    ]
+   ],
+   "bytes": 20316
+  },
+  {
+   "id": "school_desk",
+   "category": "school",
+   "file": "models/props/school/school_desk.glb",
+   "notes": "Student desk with chair",
+   "bounds": [
+    [
+     -0.3499999940395355,
+     -0.004999995231628418,
+     -0.25
+    ],
+    [
+     0.3499999940395355,
+     0.8799999952316284,
+     0.7199999690055847
+    ]
+   ],
+   "bytes": 16552
+  },
+  {
+   "id": "chalkboard",
+   "category": "school",
+   "file": "models/props/school/chalkboard.glb",
+   "notes": "Chalkboard with wood frame ('History of Dust')",
+   "bounds": [
+    [
+     -1.2999999523162842,
+     0.800000011920929,
+     -0.029999999329447746
+    ],
+    [
+     1.2999999523162842,
+     2.200000047683716,
+     0.10000000149011612
+    ]
+   ],
+   "bytes": 35752
+  },
+  {
+   "id": "teacher_desk",
+   "category": "school",
+   "file": "models/props/school/teacher_desk.glb",
+   "notes": "Teacher's wooden desk",
+   "bounds": [
+    [
+     -0.699999988079071,
+     0.004999995231628418,
+     -0.3499999940395355
+    ],
+    [
+     0.699999988079071,
+     0.7899999618530273,
+     0.3499999940395355
+    ]
+   ],
+   "bytes": 8520
+  },
+  {
+   "id": "trophy",
+   "category": "school",
+   "file": "models/props/school/trophy.glb",
+   "notes": "Trophy cup (gold)",
+   "bounds": [
+    [
+     -0.2120000123977661,
+     0.0,
+     -0.15000000596046448
+    ],
+    [
+     0.2120000123977661,
+     0.4000000059604645,
+     0.15000000596046448
+    ]
+   ],
+   "bytes": 18692
+  },
+  {
+   "id": "newspaper",
+   "category": "school",
+   "file": "models/props/school/newspaper.glb",
+   "notes": "Front-page newspaper (double-sided flat sheet)",
+   "bounds": [
+    [
+     -0.20999999344348907,
+     0.0,
+     -0.0020000000949949026
+    ],
+    [
+     0.20999999344348907,
+     0.5799999833106995,
+     0.0024999999441206455
+    ]
+   ],
+   "bytes": 26264
+  },
+  {
+   "id": "calendar",
+   "category": "school",
+   "file": "models/props/school/calendar.glb",
+   "notes": "Wall tear-off calendar (swap page texture: textures/signs/calendar_*.png)",
+   "bounds": [
+    [
+     -0.20999999344348907,
+     0.0,
+     -0.014999999664723873
+    ],
+    [
+     0.20999999344348907,
+     0.41999998688697815,
+     0.017
+    ]
+   ],
+   "bytes": 18972
+  },
+  {
+   "id": "picture_book",
+   "category": "school",
+   "file": "models/props/school/picture_book.glb",
+   "notes": "Picture book 'THE SUN' (open)",
+   "bounds": [
+    [
+     -0.25,
+     0.0,
+     -0.17000000178813934
+    ],
+    [
+     0.25,
+     0.05649813264608383,
+     0.17000000178813934
+    ]
+   ],
+   "bytes": 12780
+  },
+  {
+   "id": "bed",
+   "category": "home",
+   "file": "models/props/home/bed.glb",
+   "notes": "Bed with pillow and blanket",
+   "bounds": [
+    [
+     -0.550000011920929,
+     0.0,
+     -1.0899999141693115
+    ],
+    [
+     0.550000011920929,
+     0.800000011920929,
+     1.0499999523162842
+    ]
+   ],
+   "bytes": 11960
+  },
+  {
+   "id": "hand_mirror",
+   "category": "home",
+   "file": "models/props/home/hand_mirror.glb",
+   "notes": "Handheld mirror",
+   "bounds": [
+    [
+     -0.11999999731779099,
+     -0.009999997913837433,
+     -0.009999999776482582
+    ],
+    [
+     0.11999999731779099,
+     0.42000001668930054,
+     0.012000000104308128
+    ]
+   ],
+   "bytes": 10640
+  },
+  {
+   "id": "flashlight",
+   "category": "home",
+   "file": "models/props/home/flashlight.glb",
+   "notes": "Flashlight with visible light cone (cone is a separate node 'beam')",
+   "bounds": [
+    [
+     -0.44999998807907104,
+     -0.44999998807907104,
+     -0.10000000149011612
+    ],
+    [
+     0.44999998807907104,
+     0.44999998807907104,
+     2.14
+    ]
+   ],
+   "bytes": 13948
+  },
+  {
+   "id": "window",
+   "category": "home",
+   "file": "models/props/home/window.glb",
+   "notes": "Window with frame (night-lit variant via textures/surfaces/window_lit.png)",
+   "bounds": [
+    [
+     -0.7200000286102295,
+     -0.029999999329447746,
+     -0.03999999910593033
+    ],
+    [
+     0.7200000286102295,
+     1.2000000476837158,
+     0.12999999523162842
+    ]
+   ],
+   "bytes": 8452
+  },
+  {
+   "id": "mood_dial",
+   "category": "home",
+   "file": "models/props/home/mood_dial.glb",
+   "notes": "Sun-to-storm mood dial (wall gauge)",
+   "bounds": [
+    [
+     -0.5,
+     0.0,
+     -0.029999999329447746
+    ],
+    [
+     0.5,
+     1.0,
+     0.04999999988824129
+    ]
+   ],
+   "bytes": 37324
+  },
+  {
+   "id": "lemonade",
+   "category": "home",
+   "file": "models/props/home/lemonade.glb",
+   "notes": "Glass of lemonade with straw",
+   "bounds": [
+    [
+     -0.038997117429971695,
+     0.0,
+     -0.03999999910593033
+    ],
+    [
+     0.06499999761581421,
+     0.20923423767089844,
+     0.03999999910593033
+    ]
+   ],
+   "bytes": 12720
+  },
+  {
+   "id": "tree_round",
+   "category": "town",
+   "file": "models/props/town/tree_round.glb",
+   "notes": "Round cartoon tree",
+   "bounds": [
+    [
+     -1.2999999523162842,
+     0.0,
+     -1.0
+    ],
+    [
+     1.2999999523162842,
+     3.200000047683716,
+     1.0
+    ]
+   ],
+   "bytes": 24724
+  },
+  {
+   "id": "bush",
+   "category": "town",
+   "file": "models/props/town/bush.glb",
+   "notes": "Round bush",
+   "bounds": [
+    [
+     -0.5,
+     0.0,
+     -0.5
+    ],
+    [
+     0.75,
+     0.5,
+     0.5
+    ]
+   ],
+   "bytes": 10144
+  },
+  {
+   "id": "street_lamp",
+   "category": "town",
+   "file": "models/props/town/street_lamp.glb",
+   "notes": "Street lamp (emissive bulb)",
+   "bounds": [
+    [
+     -0.19021129608154297,
+     0.0,
+     -0.20000000298023224
+    ],
+    [
+     0.19021129608154297,
+     3.9499998092651367,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 13200
+  },
+  {
+   "id": "string_lights",
+   "category": "town",
+   "file": "models/props/town/string_lights.glb",
+   "notes": "String of fairy lights (6 m, sagging)",
+   "bounds": [
+    [
+     -3.0450000762939453,
+     -0.7050000429153442,
+     -0.04500000178813934
+    ],
+    [
+     3.0017895698547363,
+     0.004668734967708588,
+     0.04500000178813934
+    ]
+   ],
+   "bytes": 66332
+  },
+  {
+   "id": "bench",
+   "category": "town",
+   "file": "models/props/town/bench.glb",
+   "notes": "Wooden park bench",
+   "bounds": [
+    [
+     -0.800000011920929,
+     -0.004999995231628418,
+     -0.2734545171260834
+    ],
+    [
+     0.800000011920929,
+     0.8499999642372131,
+     0.20000000298023224
+    ]
+   ],
+   "bytes": 13972
+  },
+  {
+   "id": "picket_fence",
+   "category": "town",
+   "file": "models/props/town/picket_fence.glb",
+   "notes": "White picket fence segment (2 m)",
+   "bounds": [
+    [
+     -1.0,
+     0.0,
+     -0.044999998062849045
+    ],
+    [
+     1.0,
+     0.8799999952316284,
+     0.014999999664723873
+    ]
+   ],
+   "bytes": 18664
+  },
+  {
+   "id": "fountain",
+   "category": "town",
+   "file": "models/props/town/fountain.glb",
+   "notes": "Fountain for the town plaza",
+   "bounds": [
+    [
+     -1.7999999523162842,
+     0.0,
+     -1.7999999523162842
+    ],
+    [
+     1.7999999523162842,
+     2.299999952316284,
+     1.7999999523162842
+    ]
+   ],
+   "bytes": 26556
+  },
+  {
+   "id": "car",
+   "category": "town",
+   "file": "models/props/town/car.glb",
+   "notes": "Compact car (pink / swap color material 'car_paint')",
+   "bounds": [
+    [
+     -0.9750000238418579,
+     0.0,
+     -1.8199999332427979
+    ],
+    [
+     0.9750000238418579,
+     1.4249999523162842,
+     1.899999976158142
+    ]
+   ],
+   "bytes": 27960
+  },
+  {
+   "id": "house_white",
+   "category": "town",
+   "file": "models/props/town/house_white.glb",
+   "notes": "Two-storey suburban house, white siding, blue roof",
+   "bounds": [
+    [
+     -3.1590023040771484,
+     0.0,
+     -2.700000047683716
+    ],
+    [
+     3.1590023040771484,
+     5.604978561401367,
+     3.5
+    ]
+   ],
+   "bytes": 39088
+  },
+  {
+   "id": "house_pink",
+   "category": "town",
+   "file": "models/props/town/house_pink.glb",
+   "notes": "Two-storey house, pink siding",
+   "bounds": [
+    [
+     -3.1590023040771484,
+     0.0,
+     -2.700000047683716
+    ],
+    [
+     3.1590023040771484,
+     5.604978561401367,
+     3.5
+    ]
+   ],
+   "bytes": 39040
+  },
+  {
+   "id": "house_green",
+   "category": "town",
+   "file": "models/props/town/house_green.glb",
+   "notes": "Two-storey house, sage green siding (sunrise house)",
+   "bounds": [
+    [
+     -3.1590023040771484,
+     0.0,
+     -2.700000047683716
+    ],
+    [
+     3.1590023040771484,
+     5.604978561401367,
+     3.5
+    ]
+   ],
+   "bytes": 39092
+  },
+  {
+   "id": "house_navy_night",
+   "category": "town",
+   "file": "models/props/town/house_navy_night.glb",
+   "notes": "Two-storey house, navy siding with lit windows (night)",
+   "bounds": [
+    [
+     -3.1590023040771484,
+     0.0,
+     -2.700000047683716
+    ],
+    [
+     3.1590023040771484,
+     5.604978561401367,
+     3.5
+    ]
+   ],
+   "bytes": 38356
+  },
+  {
+   "id": "house_grey_small",
+   "category": "town",
+   "file": "models/props/town/house_grey_small.glb",
+   "notes": "One-storey grey house (rainy scenes)",
+   "bounds": [
+    [
+     -3.1590023040771484,
+     0.0,
+     -2.700000047683716
+    ],
+    [
+     3.1590023040771484,
+     3.804978847503662,
+     3.5
+    ]
+   ],
+   "bytes": 30420
+  },
+  {
+   "id": "shop_lamps",
+   "category": "town",
+   "file": "models/props/town/shop_lamps.glb",
+   "notes": "Shop: LAMPS & BULBS (blue)",
+   "bounds": [
+    [
+     -2.0999999046325684,
+     0.0,
+     -1.600000023841858
+    ],
+    [
+     2.0999999046325684,
+     3.3999998569488525,
+     2.2252016067504883
+    ]
+   ],
+   "bytes": 27184
+  },
+  {
+   "id": "shop_mushrooms",
+   "category": "town",
+   "file": "models/props/town/shop_mushrooms.glb",
+   "notes": "Shop: MUSHROOMS (teal)",
+   "bounds": [
+    [
+     -2.0999999046325684,
+     0.0,
+     -1.600000023841858
+    ],
+    [
+     2.0999999046325684,
+     3.3999998569488525,
+     2.2252016067504883
+    ]
+   ],
+   "bytes": 24676
+  },
+  {
+   "id": "shop_cafe",
+   "category": "town",
+   "file": "models/props/town/shop_cafe.glb",
+   "notes": "Shop: CAFE (white)",
+   "bounds": [
+    [
+     -2.0999999046325684,
+     0.0,
+     -1.600000023841858
+    ],
+    [
+     2.0999999046325684,
+     3.3999998569488525,
+     2.2252016067504883
+    ]
+   ],
+   "bytes": 22008
+  },
+  {
+   "id": "shop_blank",
+   "category": "town",
+   "file": "models/props/town/shop_blank.glb",
+   "notes": "Shop: blank sign (retexture 'sign_shop_blank')",
+   "bounds": [
+    [
+     -2.0999999046325684,
+     0.0,
+     -1.600000023841858
+    ],
+    [
+     2.0999999046325684,
+     3.3999998569488525,
+     2.2252016067504883
+    ]
+   ],
+   "bytes": 20936
+  },
+  {
+   "id": "power_plant",
+   "category": "town",
+   "file": "models/props/town/power_plant.glb",
+   "notes": "Power plant with two striped chimneys + glowing windows",
+   "bounds": [
+    [
+     -5.099999904632568,
+     0.0,
+     -3.0999999046325684
+    ],
+    [
+     5.099999904632568,
+     11.600000381469727,
+     3.700000047683716
+    ]
+   ],
+   "bytes": 52460
+  },
+  {
+   "id": "school_entrance",
+   "category": "town",
+   "file": "models/props/town/school_entrance.glb",
+   "notes": "Cafeteria / school entrance doorway with sign",
+   "bounds": [
+    [
+     -3.0,
+     0.0,
+     -0.23499999940395355
+    ],
+    [
+     3.0,
+     3.5999999046325684,
+     0.23499999940395355
+    ]
+   ],
+   "bytes": 14584
+  },
+  {
+   "id": "glow_mushroom",
+   "category": "nature",
+   "file": "models/props/nature/glow_mushroom.glb",
+   "notes": "Glowing mushroom (emissive cap, swap color on 'mushroom_cap_*')",
+   "bounds": [
+    [
+     -0.3499999940395355,
+     0.0,
+     -0.3499999940395355
+    ],
+    [
+     0.3499999940395355,
+     0.7724999785423279,
+     0.3499999940395355
+    ]
+   ],
+   "bytes": 11212
+  },
+  {
+   "id": "mushroom_field",
+   "category": "nature",
+   "file": "models/props/nature/mushroom_field.glb",
+   "notes": "Cluster of glowing mushrooms (pink / white / cyan)",
+   "bounds": [
+    [
+     -3.0,
+     0.0,
+     -3.0
+    ],
+    [
+     3.0,
+     0.898125171661377,
+     3.0
+    ]
+   ],
+   "bytes": 116488
+  },
+  {
+   "id": "cloud",
+   "category": "nature",
+   "file": "models/props/nature/cloud.glb",
+   "notes": "Puffy cartoon cloud (sunset-tinted variant via material color)",
+   "bounds": [
+    [
+     -1.6824495792388916,
+     0.30000001192092896,
+     -1.0
+    ],
+    [
+     1.7311959266662598,
+     1.840000033378601,
+     1.0
+    ]
+   ],
+   "bytes": 44344
+  },
+  {
+   "id": "storm_cloud",
+   "category": "nature",
+   "file": "models/props/nature/storm_cloud.glb",
+   "notes": "Storm cloud (dark)",
+   "bounds": [
+    [
+     -1.6824495792388916,
+     0.30000001192092896,
+     -1.0
+    ],
+    [
+     1.7311959266662598,
+     1.840000033378601,
+     1.0
+    ]
+   ],
+   "bytes": 44376
+  },
+  {
+   "id": "sun",
+   "category": "nature",
+   "file": "models/props/nature/sun.glb",
+   "notes": "Sun disc (emissive)",
+   "bounds": [
+    [
+     -2.0,
+     0.0,
+     -2.0
+    ],
+    [
+     2.0,
+     4.0,
+     2.0
+    ]
+   ],
+   "bytes": 18108
+  },
+  {
+   "id": "moon",
+   "category": "nature",
+   "file": "models/props/nature/moon.glb",
+   "notes": "Full moon (emissive)",
+   "bounds": [
+    [
+     -1.5,
+     0.0,
+     -1.5
+    ],
+    [
+     1.5,
+     3.0,
+     1.5
+    ]
+   ],
+   "bytes": 18080
+  },
+  {
+   "id": "lightning_bolt",
+   "category": "nature",
+   "file": "models/props/nature/lightning_bolt.glb",
+   "notes": "Lightning bolt (emissive, flat zig-zag)",
+   "bounds": [
+    [
+     -0.9419112205505371,
+     -0.10434228181838989,
+     -0.05000000074505806
+    ],
+    [
+     0.6399713158607483,
+     8.109528541564941,
+     0.05000000074505806
+    ]
+   ],
+   "bytes": 5980
+  },
+  {
+   "id": "rock",
+   "category": "nature",
+   "file": "models/props/nature/rock.glb",
+   "notes": "Rock / boulder",
+   "bounds": [
+    [
+     -0.6235383152961731,
+     -0.12000000476837158,
+     -0.6000000238418579
+    ],
+    [
+     0.9031089544296265,
+     0.7200000286102295,
+     0.6000000238418579
+    ]
+   ],
+   "bytes": 4568
+  },
+  {
+   "id": "mountain",
+   "category": "nature",
+   "file": "models/props/nature/mountain.glb",
+   "notes": "Mountain peak (climbable, low-poly)",
+   "bounds": [
+    [
+     -13.787308692932129,
+     0.0,
+     -13.155696868896484
+    ],
+    [
+     13.787308692932129,
+     18.049999237060547,
+     14.0
+    ]
+   ],
+   "bytes": 4652
+  },
+  {
+   "id": "ground_grass",
+   "category": "nature",
+   "file": "models/props/nature/ground_grass.glb",
+   "notes": "Ground tile 10x10 m grass",
+   "bounds": [
+    [
+     -5.0,
+     0.05000000074505806,
+     -5.0
+    ],
+    [
+     5.0,
+     0.05000000074505806,
+     5.0
+    ]
+   ],
+   "bytes": 12104
+  },
+  {
+   "id": "road_tile",
+   "category": "town",
+   "file": "models/props/town/road_tile.glb",
+   "notes": "Road tile 8x8 m with centre dashes",
+   "bounds": [
+    [
+     -4.0,
+     0.05000000074505806,
+     -4.0
+    ],
+    [
+     4.0,
+     0.05000000074505806,
+     4.0
+    ]
+   ],
+   "bytes": 14468
+  },
+  {
+   "id": "sidewalk",
+   "category": "town",
+   "file": "models/props/town/sidewalk.glb",
+   "notes": "Sidewalk tile 2x8 m with curb",
+   "bounds": [
+    [
+     -1.0,
+     0.0,
+     -4.0
+    ],
+    [
+     1.0,
+     0.15000000596046448,
+     4.0
+    ]
+   ],
+   "bytes": 3000
+  },
+  {
+   "id": "plaza_tile",
+   "category": "town",
+   "file": "models/props/town/plaza_tile.glb",
+   "notes": "Cobblestone plaza tile 8x8 m",
+   "bounds": [
+    [
+     -4.0,
+     0.05000000074505806,
+     -4.0
+    ],
+    [
+     4.0,
+     0.05000000074505806,
+     4.0
+    ]
+   ],
+   "bytes": 5308
+  },
+  {
+   "id": "stage",
+   "category": "event",
+   "file": "models/props/event/stage.glb",
+   "notes": "Stage platform with purple backdrop and title",
+   "bounds": [
+    [
+     -4.0,
+     0.0,
+     -2.0999999046325684
+    ],
+    [
+     4.0,
+     5.300000190734863,
+     2.0
+    ]
+   ],
+   "bytes": 18720
+  },
+  {
+   "id": "bleachers",
+   "category": "event",
+   "file": "models/props/event/bleachers.glb",
+   "notes": "Audience bleacher (3 rows, seat crowd characters on it)",
+   "bounds": [
+    [
+     -4.0,
+     0.0,
+     -2.0
+    ],
+    [
+     4.0,
+     1.7999999523162842,
+     0.4000000059604645
+    ]
+   ],
+   "bytes": 3864
+  },
+  {
+   "id": "microphone",
+   "category": "event",
+   "file": "models/props/event/microphone.glb",
+   "notes": "Microphone on stand",
+   "bounds": [
+    [
+     -0.17548702657222748,
+     0.0,
+     -0.18000000715255737
+    ],
+    [
+     0.17548702657222748,
+     1.6200000047683716,
+     0.18000000715255737
+    ]
+   ],
+   "bytes": 11432
+  },
+  {
+   "id": "rain_sheet",
+   "category": "fx",
+   "file": "models/props/fx/rain_sheet.glb",
+   "notes": "Rain sheet (alpha plane, scroll the UVs downward to animate)",
+   "bounds": [
+    [
+     -5.0,
+     0.0,
+     0.0
+    ],
+    [
+     5.0,
+     10.0,
+     0.0
+    ]
+   ],
+   "bytes": 13372
+  },
+  {
+   "id": "speech_bubble",
+   "category": "fx",
+   "file": "models/props/fx/speech_bubble.glb",
+   "notes": "Speech bubble 'GOOD MORNING!'",
+   "bounds": [
+    [
+     -0.5,
+     0.0,
+     0.0
+    ],
+    [
+     0.5,
+     0.5,
+     0.0
+    ]
+   ],
+   "bytes": 10320
+  },
+  {
+   "id": "sun_rays",
+   "category": "fx",
+   "file": "models/props/fx/sun_rays.glb",
+   "notes": "Sun ray burst (god rays, additive)",
+   "bounds": [
+    [
+     -10.479804992675781,
+     -0.15155434608459473,
+     -0.004999999888241291
+    ],
+    [
+     10.159358978271484,
+     11.969589233398438,
+     0.004999999888241291
+    ]
+   ],
+   "bytes": 10568
+  }
+ ],
+ "textures": {
+  "faces": [
+   "neutral",
+   "smile",
+   "happy",
+   "laugh",
+   "sleepy_blush",
+   "sad",
+   "crying",
+   "scared",
+   "shocked",
+   "angry",
+   "worried",
+   "smug",
+   "wink",
+   "unimpressed",
+   "love",
+   "determined",
+   "yelling",
+   "nervous_sweat",
+   "dizzy",
+   "sleeping"
+  ],
+  "outfits": [
+   "button_shirt_orange",
+   "dress_pink",
+   "hoodie_green",
+   "hoodie_red",
+   "hoodie_yellow",
+   "jersey_blue_10",
+   "overalls",
+   "pajama_pink",
+   "plaid_grey",
+   "plaid_red",
+   "school_uniform_black",
+   "school_uniform_brown",
+   "stripes_green_black",
+   "stripes_red_white",
+   "suit_black",
+   "suit_gold_sequin_bowtie"
+  ],
+  "signs": [
+   "cafeteria",
+   "calendar_day_01",
+   "calendar_day_02",
+   "calendar_day_03",
+   "calendar_day_04",
+   "calendar_day_05",
+   "calendar_day_06",
+   "calendar_day_07",
+   "calendar_day_08",
+   "calendar_day_09",
+   "calendar_day_10",
+   "calendar_day_11",
+   "calendar_day_12",
+   "calendar_day_13",
+   "calendar_day_14",
+   "calendar_day_15",
+   "calendar_day_16",
+   "calendar_day_17",
+   "calendar_day_18",
+   "calendar_day_19",
+   "calendar_day_20",
+   "calendar_day_21",
+   "calendar_day_22",
+   "calendar_day_23",
+   "calendar_day_24",
+   "calendar_day_25",
+   "calendar_day_26",
+   "calendar_day_27",
+   "calendar_day_28",
+   "calendar_day_29",
+   "calendar_day_30",
+   "calendar_fri",
+   "calendar_mon",
+   "calendar_sat",
+   "calendar_sun",
+   "calendar_thu",
+   "calendar_tue",
+   "calendar_wed",
+   "caption_example_green",
+   "caption_example_white",
+   "chalkboard_history_of_dust",
+   "costume_contest",
+   "mood_dial_face",
+   "newspaper_blank",
+   "newspaper_front",
+   "poster_starlight_princess",
+   "power_plant",
+   "shop_cafe",
+   "shop_lamps_bulbs",
+   "shop_mushrooms",
+   "speech_blank",
+   "speech_good_morning",
+   "town_rule_example"
+  ],
+  "surfaces": [
+   "brick_dark",
+   "brick_red",
+   "cobble",
+   "grass",
+   "road",
+   "siding_navy",
+   "siding_pink",
+   "siding_white",
+   "tiles_floor",
+   "window_day",
+   "window_lit",
+   "wood_dark",
+   "wood_light",
+   "wood_purple"
+  ],
+  "sky_fx": [
+   "glow_cyan",
+   "glow_warm",
+   "rain_streaks",
+   "sky_day",
+   "sky_dusk_purple",
+   "sky_night_stars",
+   "sky_storm",
+   "sky_sunset"
+  ]
+ }
+}
