@@ -42,3 +42,21 @@ python3 tools/build_all.py                 # everything
 python3 tools/build_all.py stripe_kid car  # only these ids
 ```
 New characters go in `characters.cast()` and new props are `@prop(...)` functions in `props.py`.
+
+## Pets (`models/props/pets/`)
+`pet_snail` (Common), `pet_bunny`, `pet_cat`, `pet_owl` (Rare), `pet_wolf` (Epic), `pet_dragon` (Legendary), plus
+hatching eggs `egg_common/rare/epic/legendary` (lift or tilt the `top` node to crack one), `founder_statue` (a stone
+hero with a tiny stone snail on its shoulder, and a warning plaque) and `stone_guardian` (a giant golem; dim the
+`stone_glow_*` materials to put it to sleep). Animatable nodes: snail `body`, `shell`, `eyestalk_L/R`; dragon
+`wing_L/R`, `tail`, `head`; wolf `leg_FL/FR/BL/BR`, `tail`, `head`; owl `wing_L/R`, `head`.
+
+## Making a Short (`tools/film/`)
+The renderer used for "In this town, I got the weakest pet" (`videos/weakest_pet.mp4`):
+1. Edit `lines.json`: one sentence per shot, with the caption keyword in `*stars*`. Add `"beat": true` for a pause after a line.
+2. Voice: `pip install piper-tts`, download a Piper voice (e.g. `en_US-ryan-high.onnx` + `.json`), then run
+   `python3 make_vo.py en_US-ryan-high.onnx`. This writes `vo/*.wav` and `timeline.json`.
+3. Shots live in `film.js` under `SHOTS` (one function per line id). Each builds a three.js scene from these GLBs and
+   animates the rigs with `act(rig, 'walk'|'run'|'cheer'|'laugh'|'scared'|'freeze'|'point'|...)`.
+4. Frames: `npm i three@0.160.0 playwright` in `tools/film`, then `node render_film.js frames`. This renders 720x1280 at 30 fps.
+5. Audio: `python3 mix.py` mixes the narration, a synth score and SFX into `mix.wav`. Set `BGM=<instrumental.wav>` to use your own music bed.
+6. `ffmpeg -framerate 30 -i frames/f_%05d.jpg -i mix.wav -vf scale=1080:1920:flags=lanczos,format=yuv420p -c:v libx264 -crf 18 -c:a aac -shortest out.mp4`
