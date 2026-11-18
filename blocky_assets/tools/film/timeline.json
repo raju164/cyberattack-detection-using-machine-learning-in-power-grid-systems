@@ -1,0 +1,186 @@
+[
+ {
+  "id": "s01",
+  "text": "In this town, every kid gets a *pet* on their twelfth birthday.",
+  "vo_start": 0.25,
+  "vo_dur": 3.042,
+  "start": 0,
+  "end": 3.352
+ },
+ {
+  "id": "s02",
+  "text": "The rarer the pet, the stronger your *power*.",
+  "vo_start": 3.472,
+  "vo_dur": 2.09,
+  "start": 3.352,
+  "end": 5.622
+ },
+ {
+  "id": "s03",
+  "text": "Jake's egg glowed gold. A *dragon*. Legendary.",
+  "vo_start": 5.742,
+  "vo_dur": 2.508,
+  "start": 5.622,
+  "end": 8.309
+ },
+ {
+  "id": "s04",
+  "text": "Mia got a *wolf*. Now she outruns cars.",
+  "vo_start": 8.429,
+  "vo_dur": 2.183,
+  "start": 8.309,
+  "end": 10.672
+ },
+ {
+  "id": "s05",
+  "text": "Then my egg *cracked*.",
+  "vo_start": 10.792,
+  "vo_dur": 1.045,
+  "start": 10.672,
+  "end": 11.897
+ },
+ {
+  "id": "s06",
+  "text": "A... *snail*.",
+  "vo_start": 12.017,
+  "vo_dur": 0.592,
+  "start": 11.897,
+  "end": 12.669
+ },
+ {
+  "id": "s07",
+  "text": "Common. Power: *zero*.",
+  "vo_start": 12.789,
+  "vo_dur": 1.498,
+  "start": 12.669,
+  "end": 14.347
+ },
+ {
+  "id": "s08",
+  "text": "The whole town *laughed*.",
+  "vo_start": 14.467,
+  "vo_dur": 1.138,
+  "start": 14.347,
+  "end": 16.015
+ },
+ {
+  "id": "s09",
+  "text": "For thirty days, I *trained* it.",
+  "vo_start": 16.135,
+  "vo_dur": 1.474,
+  "start": 16.015,
+  "end": 17.669
+ },
+ {
+  "id": "s10",
+  "text": "Day thirty. It moved one *meter*.",
+  "vo_start": 17.789,
+  "vo_dur": 1.591,
+  "start": 17.669,
+  "end": 19.44
+ },
+ {
+  "id": "s11",
+  "text": "But nobody ever read the plaque under the founder's *statue*.",
+  "vo_start": 19.56,
+  "vo_dur": 2.694,
+  "start": 19.44,
+  "end": 22.313
+ },
+ {
+  "id": "s12",
+  "text": "The Stone Guardian only sees what moves *fast*.",
+  "vo_start": 22.433,
+  "vo_dur": 2.31,
+  "start": 22.313,
+  "end": 25.153
+ },
+ {
+  "id": "s13",
+  "text": "That night, the ground *shook*.",
+  "vo_start": 25.273,
+  "vo_dur": 1.358,
+  "start": 25.153,
+  "end": 26.692
+ },
+ {
+  "id": "s14",
+  "text": "The Guardian *woke up*.",
+  "vo_start": 26.812,
+  "vo_dur": 0.987,
+  "start": 26.692,
+  "end": 28.209
+ },
+ {
+  "id": "s15",
+  "text": "Jake's dragon flew at it. *Grabbed*.",
+  "vo_start": 28.329,
+  "vo_dur": 1.834,
+  "start": 28.209,
+  "end": 30.223
+ },
+ {
+  "id": "s16",
+  "text": "Mia's wolf ran. *Grabbed*.",
+  "vo_start": 30.343,
+  "vo_dur": 1.393,
+  "start": 30.223,
+  "end": 31.796
+ },
+ {
+  "id": "s17",
+  "text": "Everyone *froze*.",
+  "vo_start": 31.916,
+  "vo_dur": 0.987,
+  "start": 31.796,
+  "end": 32.963
+ },
+ {
+  "id": "s18",
+  "text": "Everyone... except my *snail*.",
+  "vo_start": 33.083,
+  "vo_dur": 1.358,
+  "start": 32.963,
+  "end": 34.501
+ },
+ {
+  "id": "s19",
+  "text": "Too slow to be *seen*.",
+  "vo_start": 34.621,
+  "vo_dur": 1.207,
+  "start": 34.501,
+  "end": 35.889
+ },
+ {
+  "id": "s20",
+  "text": "It crawled all the way up to the glowing *heart*,",
+  "vo_start": 36.009,
+  "vo_dur": 1.892,
+  "start": 35.889,
+  "end": 37.961
+ },
+ {
+  "id": "s21",
+  "text": "and the Guardian fell *asleep*.",
+  "vo_start": 38.081,
+  "vo_dur": 1.265,
+  "start": 37.961,
+  "end": 39.757
+ },
+ {
+  "id": "s22",
+  "text": "The next morning, I looked at the statue *again*.",
+  "vo_start": 39.877,
+  "vo_dur": 1.962,
+  "start": 39.757,
+  "end": 41.899
+ },
+ {
+  "id": "s23",
+  "text": "The founder had a *snail* too.",
+  "vo_start": 42.019,
+  "vo_dur": 1.347,
+  "start": 41.899,
+  "end": 45.026
+ }
+]

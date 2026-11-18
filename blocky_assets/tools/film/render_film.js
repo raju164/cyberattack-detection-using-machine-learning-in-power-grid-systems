@@ -1,0 +1,22 @@
+const {chromium}=require('playwright');
+const fs=require('fs'),path=require('path'),http=require('http');
+const FILM=__dirname, NM=process.env.THREE_NM||path.join(__dirname,'node_modules'), ASSETS=process.env.ASSETS||path.join(__dirname,'../..'), OUT=process.argv[2]||path.join(FILM,'frames');
+const pick=(process.argv[3]||'').split(',').filter(Boolean).map(Number);
+const types={'.js':'text/javascript','.html':'text/html','.json':'application/json','.png':'image/png','.otf':'font/otf','.glb':'model/gltf-binary'};
+const srv=http.createServer((q,s)=>{const p=decodeURIComponent(q.url.split('?')[0]);let f;
+ if(p.startsWith('/film/'))f=path.join(FILM,p.slice(6));else if(p.startsWith('/node_modules/'))f=path.join(NM,p.slice(14));
+ else if(p.startsWith('/assets/'))f=path.join(ASSETS,p.slice(8));else if(p==='/font/inter.otf')f='/usr/share/fonts/opentype/inter/Inter-ExtraBold.otf';else f=path.join(FILM,p);
+ fs.readFile(f,(e,d)=>{if(e){s.writeHead(404);return s.end();}s.writeHead(200,{'Content-Type':types[path.extname(f)]||'application/octet-stream'});s.end(d);});}).listen(8770);
+(async()=>{const b=await chromium.launch({args:['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']});
+ const pg=await b.newPage({viewport:{width:720,height:1280}});
+ pg.on('console',m=>{if(['error','warning'].includes(m.type()))console.log('PAGE',m.type(),m.text().slice(0,300))});
+ pg.on('pageerror',e=>console.log('PAGEERR',e.message));
+ await pg.goto('http://localhost:8770/film/film.html'); await pg.waitForFunction('window.ready',null,{timeout:60000});
+ const {frames}=await pg.evaluate(()=>window.init());
+ fs.mkdirSync(OUT,{recursive:true});
+ const list=pick.length?pick:[...Array(frames).keys()];
+ const t0=Date.now();
+ for(const i of list){const url=await pg.evaluate(i=>window.frame(i),i);
+  fs.writeFileSync(path.join(OUT,`f_${String(i).padStart(5,'0')}.jpg`),Buffer.from(url.split(',')[1],'base64'));
+  if(i%100===0)console.log('frame',i,'/',frames,((Date.now()-t0)/1000).toFixed(0)+'s');}
+ console.log('done',list.length,'frames in',((Date.now()-t0)/1000).toFixed(0),'s'); await b.close(); srv.close();})();
